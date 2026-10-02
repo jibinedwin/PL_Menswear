@@ -68,7 +68,7 @@ strong { font-weight: 600; }
 
 /* ---------- Accessibility ---------- */
 :focus-visible { outline: 2px solid var(--charcoal); outline-offset: 3px; }
-.dark-section :focus-visible, .site-footer :focus-visible { outline-color: var(--ivory); }
+.dark-section :focus-visible { outline-color: var(--ivory); }
 .skip-link {
   position: absolute; left: 16px; top: -60px; z-index: 300;
   background: var(--ink); color: var(--ivory); padding: 10px 18px;

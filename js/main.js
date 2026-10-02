@@ -10,11 +10,9 @@
   var UI = window.PLMWUI, Data = window.PLMW, Nav = window.PLMWNav,
       Wishlist = window.PLMWWishlist, Cart = window.PLMWCart;
 
-  /* ---------- Chrome (mega menu, footer year) ---------- */
+  /* ---------- Chrome (mega menu) ---------- */
   function initChrome() {
     Nav.megaMenu();
-    var year = $('[data-year]');
-    if (year) { year.textContent = String(new Date().getFullYear()); }
   }
 
   /* ---------- Renders config-driven bits of chrome ---------- */
@@ -36,7 +34,6 @@
 
   function init() {
     UI.onScrollHeader();
-    UI.backToTop();
     UI.revealInit();
     UI.accordions();
     UI.newsletterForms();

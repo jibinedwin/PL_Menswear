@@ -59,17 +59,6 @@
     onScroll();
   }
 
-  function backToTop() {
-    var btn = $('.back-to-top');
-    if (!btn) return;
-    var onScroll = function () {
-      btn.classList.toggle('is-visible', window.scrollY > 700);
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    btn.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
-    onScroll();
-  }
-
   function revealInit() {
     var els = $all('.reveal, .reveal--img');
     if (!('IntersectionObserver' in window)) {
@@ -175,7 +164,6 @@
     icon: icon, stars: stars, ratingHtml: ratingHtml,
     $: $, $all: $all,
     onScrollHeader: onScrollHeader,
-    backToTop: backToTop,
     revealInit: revealInit,
     toast: toast,
     accordions: accordions,
