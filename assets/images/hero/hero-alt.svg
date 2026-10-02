@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img">
+  <defs>
+    <linearGradient id="bgheroalt" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#39424F"/><stop offset="0.55" stop-color="#2A323D"/><stop offset="1" stop-color="#1A2029"/>
+    </linearGradient>
+    <radialGradient id="sunheroalt" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grheroalt" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bgheroalt)"/>
+  <circle cx="1254" cy="490" r="844" fill="url(#sunheroalt)"/>
+  <rect x="0" y="772" width="1920" height="308" fill="#1A2029" opacity="0.5"/>
+  <rect x="645" y="184" width="73" height="587" fill="#12161C" opacity="0.09"/>
+  <rect x="377" y="147" width="66" height="624" fill="#12161C" opacity="0.13"/>
+  <rect x="702" y="242" width="64" height="530" fill="#12161C" opacity="0.09"/>
+  <g fill="#12161C" opacity="0.92">
+    <circle cx="605.6400133341551" cy="203.5" r="42.9"/>
+    <path d="M 559.7 773.5
+      L 550.5 589.6
+      C 544.3 528.4 538.2 503.8 538.2 454.8
+      C 538.2 393.5 526.0 369.0 519.8 332.2
+      C 513.7 295.4 526.0 270.9 550.5 258.7
+      C 575.0 246.4 636.3 246.4 660.8 258.7
+      C 685.3 270.9 697.6 295.4 691.5 332.2
+      C 685.3 369.0 673.1 393.5 673.1 454.8
+      C 673.1 503.8 666.9 528.4 660.8 589.6
+      L 651.6 773.5
+      L 621.0 773.5
+      L 617.9 638.7
+      L 593.4 638.7
+      L 590.3 773.5 Z"/>
+    <ellipse cx="605.6400133341551" cy="791.9224873042943" rx="159.36803190825395" ry="24.51815875511599" fill="#000" opacity="0.14"/>
+  </g>
+  <g fill="#12161C" opacity="0.92">
+    <circle cx="1321.0013409376145" cy="271.4" r="37.8"/>
+    <path d="M 1280.5 773.5
+      L 1272.4 611.5
+      C 1267.0 557.5 1261.6 536.0 1261.6 492.8
+      C 1261.6 438.8 1250.8 417.2 1245.4 384.8
+      C 1240.0 352.4 1250.8 330.8 1272.4 320.0
+      C 1294.0 309.2 1348.0 309.2 1369.6 320.0
+      C 1391.2 330.8 1402.0 352.4 1396.6 384.8
+      C 1391.2 417.2 1380.4 438.8 1380.4 492.8
+      C 1380.4 536.0 1375.0 557.5 1369.6 611.5
+      L 1361.5 773.5
+      L 1334.5 773.5
+      L 1331.8 654.7
+      L 1310.2 654.7
+      L 1307.5 773.5 Z"/>
+    <ellipse cx="1321.0013409376145" cy="789.7327045699018" rx="140.38991487685195" ry="21.59844844259261" fill="#000" opacity="0.14"/>
+  </g>
+  <rect width="1920" height="1080" filter="url(#grheroalt)" opacity="0.9"/>
+  <text x="115.19999999999999" y="982.8" text-anchor="start" fill="rgba(233,228,216,0.8)" font-family="Helvetica, Arial, sans-serif" font-size="42" letter-spacing="9.2" style="text-transform:uppercase">MADE FOR EVERY MOMENT</text>
+  <text x="115.19999999999999" y="1042.2" fill="rgba(233,228,216,0.8)" font-family="Helvetica, Arial, sans-serif" font-size="25" letter-spacing="4.5">PL MENS WEAR — CAMPAIGN</text>
+</svg>

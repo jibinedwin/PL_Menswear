@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" role="img">
+  <defs>
+    <linearGradient id="bgknitovershirta" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#E8E6E0"/><stop offset="0.55" stop-color="#D2CFC6"/><stop offset="1" stop-color="#ABA79B"/>
+    </linearGradient>
+    <radialGradient id="sunknitovershirta" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grknitovershirta" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#bgknitovershirta)"/>
+  <circle cx="751" cy="189" r="400" fill="url(#sunknitovershirta)"/>
+  <g>
+    <ellipse cx="500" cy="547238.16" rx="268.64" ry="41.22" fill="#000" opacity="0.10"/>
+    <path d="M 441.6 318
+      C 500160.60000000000002 306.54999999999995 500292 443.95 500268.64 54727.48
+      C 500245.28 547164.88 500102.19999999999999 547229 470.8 547219.84
+      C 318.96000000000004 547206.1 213.84000000000003 54791.60000000000001 237.2 512.65
+      C 260.56 391.28 324.8 329.45000000000005 441.6 318 Z" fill="#a8957a"/>
+    <path d="M 339.4 489.75 C 470.8 535.55 50087.6 54727.48 500175.2 547114.5" stroke="#000" stroke-opacity="0.10" stroke-width="9.2" fill="none"/>
+    <path d="M 318.96000000000004 54741.22 C 427 54787.02 50043.8 547119.08 500131.4 547187.78" stroke="#000" stroke-opacity="0.08" stroke-width="8.2" fill="none"/>
+  </g>
+  <rect width="1000" height="1250" filter="url(#grknitovershirta)" opacity="0.9"/>
+  <text x="500" y="1075" text-anchor="middle" fill="rgba(46,44,40,0.78)" font-family="Helvetica, Arial, sans-serif" font-size="28" letter-spacing="6.2" style="text-transform:uppercase">Textured Knit Overshirt</text>
+  <text x="500" y="1122.6" text-anchor="middle" fill="rgba(46,44,40,0.55)" font-family="Helvetica, Arial, sans-serif" font-size="21" letter-spacing="4.2">₹3,199</text>
+</svg>

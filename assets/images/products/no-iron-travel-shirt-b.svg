@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" role="img">
+  <defs>
+    <linearGradient id="bgnoirontravelshirtb" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#E9E6D6"/><stop offset="0.55" stop-color="#C7C9AD"/><stop offset="1" stop-color="#8F9478"/>
+    </linearGradient>
+    <radialGradient id="sunnoirontravelshirtb" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grnoirontravelshirtb" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#bgnoirontravelshirtb)"/>
+  <circle cx="696" cy="535" r="663" fill="url(#sunnoirontravelshirtb)"/>
+  <rect x="0" y="853" width="1000" height="397" fill="#8F9478" opacity="0.5"/>
+  <rect x="576" y="253" width="35" height="600" fill="#272B20" opacity="0.14"/>
+  <rect x="295" y="348" width="26" height="505" fill="#272B20" opacity="0.11"/>
+  <rect x="538" y="307" width="32" height="546" fill="#272B20" opacity="0.10"/>
+  <g fill="#272B20" opacity="0.92">
+    <circle cx="508.0921421991661" cy="273.3" r="43.8"/>
+    <path d="M 461.2 855.2
+      L 451.8 667.5
+      C 445.5 604.9 439.3 579.9 439.3 529.8
+      C 439.3 467.3 426.8 442.3 420.5 404.7
+      C 414.2 367.2 426.8 342.2 451.8 329.7
+      C 476.8 317.1 539.4 317.1 564.4 329.7
+      C 589.4 342.2 601.9 367.2 595.7 404.7
+      C 589.4 442.3 576.9 467.3 576.9 529.8
+      C 576.9 579.9 570.7 604.9 564.4 667.5
+      L 555.0 855.2
+      L 523.7 855.2
+      L 520.6 717.5
+      L 495.6 717.5
+      L 492.5 855.2 Z"/>
+    <ellipse cx="508.0921421991661" cy="873.9399310967419" rx="162.66097076097503" ry="25.024764732457697" fill="#000" opacity="0.14"/>
+  </g>
+  <rect width="1000" height="1250" filter="url(#grnoirontravelshirtb)" opacity="0.9"/>
+  <text x="60" y="1137.5" text-anchor="start" fill="rgba(42,44,34,0.75)" font-family="Helvetica, Arial, sans-serif" font-size="22" letter-spacing="4.8" style="text-transform:uppercase">NO-IRON TRAVEL SHIRT</text>
+  <text x="60" y="1206.25" fill="rgba(42,44,34,0.75)" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="2.3">₹2,699</text>
+</svg>

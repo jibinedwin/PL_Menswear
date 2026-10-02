@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img">
+  <defs>
+    <linearGradient id="bglook01" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#E8E6E0"/><stop offset="0.55" stop-color="#D2CFC6"/><stop offset="1" stop-color="#ABA79B"/>
+    </linearGradient>
+    <radialGradient id="sunlook01" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grlook01" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bglook01)"/>
+  <circle cx="653" cy="484" r="528" fill="url(#sunlook01)"/>
+  <rect x="0" y="766" width="900" height="434" fill="#ABA79B" opacity="0.5"/>
+  <rect x="246" y="206" width="39" height="560" fill="#2E2C28" opacity="0.07"/>
+  <rect x="709" y="359" width="20" height="407" fill="#2E2C28" opacity="0.09"/>
+  <rect x="47" y="163" width="34" height="603" fill="#2E2C28" opacity="0.10"/>
+  <g fill="#2E2C28" opacity="0.92">
+    <circle cx="322.72791147558013" cy="235.1" r="40.1"/>
+    <path d="M 279.8 767.6
+      L 271.2 595.9
+      C 265.5 538.6 259.7 515.7 259.7 469.9
+      C 259.7 412.6 248.3 389.7 242.6 355.4
+      C 236.8 321.0 248.3 298.1 271.2 286.7
+      C 294.1 275.2 351.4 275.2 374.3 286.7
+      C 397.2 298.1 408.6 321.0 402.9 355.4
+      C 397.2 389.7 385.7 412.6 385.7 469.9
+      C 385.7 515.7 380.0 538.6 374.3 595.9
+      L 365.7 767.6
+      L 337.0 767.6
+      L 334.2 641.7
+      L 311.3 641.7
+      L 308.4 767.6 Z"/>
+    <ellipse cx="322.72791147558013" cy="784.8084711006348" rx="148.86995435829647" ry="22.903069901276382" fill="#000" opacity="0.14"/>
+  </g>
+  <g fill="#2E2C28" opacity="0.92">
+    <circle cx="616.9131650459022" cy="210.6" r="41.9"/>
+    <path d="M 572.0 767.6
+      L 563.0 587.9
+      C 557.0 528.0 551.0 504.1 551.0 456.2
+      C 551.0 396.3 539.0 372.3 533.1 336.4
+      C 527.1 300.4 539.0 276.5 563.0 264.5
+      C 587.0 252.5 646.9 252.5 670.8 264.5
+      C 694.8 276.5 706.8 300.4 700.8 336.4
+      C 694.8 372.3 682.8 396.3 682.8 456.2
+      C 682.8 504.1 676.8 528.0 670.8 587.9
+      L 661.8 767.6
+      L 631.9 767.6
+      L 628.9 635.9
+      L 604.9 635.9
+      L 601.9 767.6 Z"/>
+    <ellipse cx="616.9131650459022" cy="785.6006368233802" rx="155.73539062208937" ry="23.959290864936825" fill="#000" opacity="0.14"/>
+  </g>
+  <rect width="900" height="1200" filter="url(#grlook01)" opacity="0.9"/>
+  <text x="54" y="1092" text-anchor="start" fill="rgba(46,44,40,0.7)" font-family="Helvetica, Arial, sans-serif" font-size="20" letter-spacing="4.4" style="text-transform:uppercase">OFFICE LOOK</text>
+  <text x="54" y="1158" fill="rgba(46,44,40,0.7)" font-family="Helvetica, Arial, sans-serif" font-size="12" letter-spacing="2.2">THE SEASON’S LOOKBOOK</text>
+</svg>

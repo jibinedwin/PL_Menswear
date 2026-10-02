@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img">
+  <defs>
+    <linearGradient id="bgoccwork" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#E8E6E0"/><stop offset="0.55" stop-color="#D2CFC6"/><stop offset="1" stop-color="#ABA79B"/>
+    </linearGradient>
+    <radialGradient id="sunoccwork" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="groccwork" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#bgoccwork)"/>
+  <circle cx="970" cy="477" r="720" fill="url(#sunoccwork)"/>
+  <rect x="0" y="904" width="1200" height="596" fill="#ABA79B" opacity="0.5"/>
+  <rect x="826" y="208" width="41" height="696" fill="#2E2C28" opacity="0.13"/>
+  <rect x="627" y="281" width="30" height="622" fill="#2E2C28" opacity="0.13"/>
+  <rect x="653" y="339" width="45" height="565" fill="#2E2C28" opacity="0.10"/>
+  <rect x="753" y="384" width="44" height="520" fill="#2E2C28" opacity="0.10"/>
+  <g fill="#2E2C28" opacity="0.92">
+    <circle cx="622.6493366248906" cy="127.0" r="58.6"/>
+    <path d="M 559.8 905.9
+      L 547.3 654.6
+      C 538.9 570.9 530.5 537.4 530.5 470.4
+      C 530.5 386.6 513.8 353.1 505.4 302.9
+      C 497.0 252.6 513.8 219.1 547.3 202.4
+      C 580.8 185.6 664.5 185.6 698.0 202.4
+      C 731.5 219.1 748.3 252.6 739.9 302.9
+      C 731.5 353.1 714.8 386.6 714.8 470.4
+      C 714.8 537.4 706.4 570.9 698.0 654.6
+      L 685.5 905.9
+      L 643.6 905.9
+      L 639.4 721.6
+      L 605.9 721.6
+      L 601.7 905.9 Z"/>
+    <ellipse cx="622.6493366248906" cy="931.0069807907565" rx="217.75644151121378" ry="33.5009910017252" fill="#000" opacity="0.14"/>
+  </g>
+  <rect width="1200" height="1500" filter="url(#groccwork)" opacity="0.9"/>
+  <text x="72" y="1365" text-anchor="start" fill="rgba(46,44,40,0.7)" font-family="Helvetica, Arial, sans-serif" font-size="26" letter-spacing="5.7" style="text-transform:uppercase">WORK</text>
+  <text x="72" y="1447.5" fill="rgba(46,44,40,0.7)" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="2.9">TAILORING FOR THE NINE-TO-NINE</text>
+</svg>

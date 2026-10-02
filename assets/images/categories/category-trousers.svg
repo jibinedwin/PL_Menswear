@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 1400" role="img">
+  <defs>
+    <linearGradient id="bgcattrousers" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#F3EDE0"/><stop offset="0.55" stop-color="#E6DAC4"/><stop offset="1" stop-color="#CDBB9C"/>
+    </linearGradient>
+    <radialGradient id="suncattrousers" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grcattrousers" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter>
+  </defs>
+  <rect width="1100" height="1400" fill="url(#bgcattrousers)"/>
+  <circle cx="806" cy="688" r="748" fill="url(#suncattrousers)"/>
+  <rect x="0" y="883" width="1100" height="517" fill="#CDBB9C" opacity="0.5"/>
+  <g fill="#2E2C28" opacity="0.92">
+    <circle cx="567.6816607452929" cy="228.9" r="49.4"/>
+    <path d="M 514.8 885.0
+      L 504.2 673.3
+      C 497.1 602.8 490.1 574.6 490.1 518.1
+      C 490.1 447.6 476.0 419.4 468.9 377.0
+      C 461.9 334.7 476.0 306.5 504.2 292.4
+      C 532.4 278.3 603.0 278.3 631.2 292.4
+      C 659.4 306.5 673.5 334.7 666.4 377.0
+      C 659.4 419.4 645.3 447.6 645.3 518.1
+      C 645.3 574.6 638.2 602.8 631.2 673.3
+      L 620.6 885.0
+      L 585.3 885.0
+      L 581.8 729.8
+      L 553.6 729.8
+      L 550.0 885.0 Z"/>
+    <ellipse cx="567.6816607452929" cy="906.1506639992446" rx="183.4264698523283" ry="28.2194569003582" fill="#000" opacity="0.14"/>
+  </g>
+  <rect width="1100" height="1400" filter="url(#grcattrousers)" opacity="0.9"/>
+  <text x="66" y="1274" text-anchor="start" fill="rgba(46,44,40,0.72)" font-family="Helvetica, Arial, sans-serif" font-size="24" letter-spacing="5.3" style="text-transform:uppercase">TROUSERS</text>
+  <text x="66" y="1351" fill="rgba(46,44,40,0.72)" font-family="Helvetica, Arial, sans-serif" font-size="14" letter-spacing="2.5">THE ESSENTIAL WARDROBE</text>
+</svg>

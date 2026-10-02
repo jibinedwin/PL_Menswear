@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img">
+  <defs>
+    <linearGradient id="bglook06" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#F6F1E6"/><stop offset="0.55" stop-color="#EBE3D2"/><stop offset="1" stop-color="#D8CCB4"/>
+    </linearGradient>
+    <radialGradient id="sunlook06" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grlook06" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bglook06)"/>
+  <circle cx="661" cy="347" r="535" fill="url(#sunlook06)"/>
+  <rect x="0" y="541" width="1200" height="359" fill="#D8CCB4" opacity="0.5"/>
+  <rect x="309" y="273" width="49" height="268" fill="#33312C" opacity="0.08"/>
+  <rect x="951" y="205" width="50" height="336" fill="#33312C" opacity="0.06"/>
+  <rect x="816" y="126" width="22" height="415" fill="#33312C" opacity="0.10"/>
+  <g fill="#33312C" opacity="0.92">
+    <circle cx="575.6575057748705" cy="123.4" r="31.6"/>
+    <path d="M 541.8 543.3
+      L 535.0 407.9
+      C 530.5 362.7 526.0 344.6 526.0 308.5
+      C 526.0 263.4 517.0 245.3 512.4 218.2
+      C 507.9 191.1 517.0 173.1 535.0 164.0
+      C 553.1 155.0 598.2 155.0 616.3 164.0
+      C 634.4 173.1 643.4 191.1 638.9 218.2
+      C 634.4 245.3 625.3 263.4 625.3 308.5
+      C 625.3 344.6 620.8 362.7 616.3 407.9
+      L 609.5 543.3
+      L 586.9 543.3
+      L 584.7 444.0
+      L 566.6 444.0
+      L 564.4 543.3 Z"/>
+    <ellipse cx="575.6575057748705" cy="556.8681575652118" rx="117.399579409305" ry="18.061473755277692" fill="#000" opacity="0.14"/>
+  </g>
+  <rect width="1200" height="900" filter="url(#grlook06)" opacity="0.9"/>
+  <text x="72" y="819" text-anchor="start" fill="rgba(46,44,40,0.72)" font-family="Helvetica, Arial, sans-serif" font-size="26" letter-spacing="5.7" style="text-transform:uppercase">THE LINEN EDIT</text>
+  <text x="72" y="868.5" fill="rgba(46,44,40,0.72)" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="2.9">THE SEASON’S LOOKBOOK</text>
+</svg>

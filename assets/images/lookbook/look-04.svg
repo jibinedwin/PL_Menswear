@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img">
+  <defs>
+    <linearGradient id="bglook04" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#4A4540"/><stop offset="0.55" stop-color="#332F2B"/><stop offset="1" stop-color="#201D1A"/>
+    </linearGradient>
+    <radialGradient id="sunlook04" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grlook04" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bglook04)"/>
+  <circle cx="975" cy="385" r="547" fill="url(#sunlook04)"/>
+  <rect x="0" y="562" width="1200" height="338" fill="#201D1A" opacity="0.5"/>
+  <rect x="198" y="181" width="26" height="381" fill="#141210" opacity="0.09"/>
+  <rect x="821" y="233" width="44" height="329" fill="#141210" opacity="0.08"/>
+  <g fill="#141210" opacity="0.92">
+    <circle cx="653.9067612960935" cy="47.2" r="38.9"/>
+    <path d="M 612.2 564.4
+      L 603.9 397.6
+      C 598.3 342.0 592.7 319.7 592.7 275.2
+      C 592.7 219.6 581.6 197.4 576.0 164.0
+      C 570.5 130.6 581.6 108.4 603.9 97.3
+      C 626.1 86.1 681.7 86.1 704.0 97.3
+      C 726.2 108.4 737.3 130.6 731.8 164.0
+      C 726.2 197.4 715.1 219.6 715.1 275.2
+      C 715.1 319.7 709.5 342.0 704.0 397.6
+      L 695.6 564.4
+      L 667.8 564.4
+      L 665.0 442.1
+      L 642.8 442.1
+      L 640.0 564.4 Z"/>
+    <ellipse cx="653.9067612960935" cy="581.1071199572365" rx="144.59831659527495" ry="22.245894860811532" fill="#000" opacity="0.14"/>
+  </g>
+  <rect width="1200" height="900" filter="url(#grlook04)" opacity="0.9"/>
+  <text x="72" y="819" text-anchor="start" fill="rgba(238,231,216,0.8)" font-family="Helvetica, Arial, sans-serif" font-size="26" letter-spacing="5.7" style="text-transform:uppercase">EVENING LOOK</text>
+  <text x="72" y="868.5" fill="rgba(238,231,216,0.8)" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="2.9">THE SEASON’S LOOKBOOK</text>
+</svg>

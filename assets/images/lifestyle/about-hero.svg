@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 900" role="img">
+  <defs>
+    <linearGradient id="bgabouthero" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#F3EDE0"/><stop offset="0.55" stop-color="#E6DAC4"/><stop offset="1" stop-color="#CDBB9C"/>
+    </linearGradient>
+    <radialGradient id="sunabouthero" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grabouthero" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter>
+  </defs>
+  <rect width="1920" height="900" fill="url(#bgabouthero)"/>
+  <circle cx="1077" cy="450" r="959" fill="url(#sunabouthero)"/>
+  <rect x="0" y="615" width="1920" height="285" fill="#CDBB9C" opacity="0.5"/>
+  <rect x="1521" y="304" width="63" height="311" fill="#2E2C28" opacity="0.12"/>
+  <rect x="202" y="213" width="42" height="402" fill="#2E2C28" opacity="0.08"/>
+  <rect x="866" y="211" width="79" height="404" fill="#2E2C28" opacity="0.12"/>
+  <rect x="1660" y="159" width="81" height="456" fill="#2E2C28" opacity="0.08"/>
+  <g fill="#2E2C28" opacity="0.92">
+    <circle cx="704.7559270977973" cy="178.9" r="33.0"/>
+    <path d="M 669.4 617.0
+      L 662.4 475.7
+      C 657.6 428.6 652.9 409.7 652.9 372.0
+      C 652.9 324.9 643.5 306.1 638.8 277.8
+      C 634.1 249.6 643.5 230.7 662.4 221.3
+      C 681.2 211.9 728.3 211.9 747.2 221.3
+      C 766.0 230.7 775.4 249.6 770.7 277.8
+      C 766.0 306.1 756.6 324.9 756.6 372.0
+      C 756.6 409.7 751.9 428.6 747.2 475.7
+      L 740.1 617.0
+      L 716.5 617.0
+      L 714.2 513.4
+      L 695.3 513.4
+      L 693.0 617.0 Z"/>
+    <ellipse cx="704.7559270977973" cy="631.1340582733872" rx="122.47872190106553" ry="18.84288029247162" fill="#000" opacity="0.14"/>
+  </g>
+  <g fill="#2E2C28" opacity="0.92">
+    <circle cx="1242.2988474190236" cy="213.1" r="30.4"/>
+    <path d="M 1209.7 617.0
+      L 1203.2 486.7
+      C 1198.9 443.3 1194.5 425.9 1194.5 391.2
+      C 1194.5 347.7 1185.8 330.4 1181.5 304.3
+      C 1177.2 278.3 1185.8 260.9 1203.2 252.2
+      C 1220.6 243.5 1264.0 243.5 1281.4 252.2
+      C 1298.8 260.9 1307.4 278.3 1303.1 304.3
+      C 1298.8 330.4 1290.1 347.7 1290.1 391.2
+      C 1290.1 425.9 1285.7 443.3 1281.4 486.7
+      L 1274.9 617.0
+      L 1253.2 617.0
+      L 1251.0 521.5
+      L 1233.6 521.5
+      L 1231.4 617.0 Z"/>
+    <ellipse cx="1242.2988474190236" cy="630.0305926061022" rx="112.91535278459673" ry="17.371592736091806" fill="#000" opacity="0.14"/>
+  </g>
+  <rect width="1920" height="900" filter="url(#grabouthero)" opacity="0.9"/>
+  <text x="115.19999999999999" y="819" text-anchor="start" fill="rgba(46,44,40,0.72)" font-family="Helvetica, Arial, sans-serif" font-size="42" letter-spacing="9.2" style="text-transform:uppercase">PL MENS WEAR</text>
+  <text x="115.19999999999999" y="868.5" fill="rgba(46,44,40,0.72)" font-family="Helvetica, Arial, sans-serif" font-size="25" letter-spacing="4.5">EST. FOR EVERYDAY LIFE</text>
+</svg>

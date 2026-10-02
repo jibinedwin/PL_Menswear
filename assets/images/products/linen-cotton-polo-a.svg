@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" role="img">
+  <defs>
+    <linearGradient id="bglinencottonpoloa" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#E8E6E0"/><stop offset="0.55" stop-color="#D2CFC6"/><stop offset="1" stop-color="#ABA79B"/>
+    </linearGradient>
+    <radialGradient id="sunlinencottonpoloa" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grlinencottonpoloa" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#bglinencottonpoloa)"/>
+  <circle cx="738" cy="254" r="400" fill="url(#sunlinencottonpoloa)"/>
+  <g>
+    <ellipse cx="502" cy="504249.08" rx="272.32" ry="43.11" fill="#000" opacity="0.10"/>
+    <path d="M 442.8 264.5
+      C 502162.8 252.52499999999998 502296 396.225 502272.32 50428.74
+      C 502248.64 504172.44 502103.6 504239.5 472.4 504229.92
+      C 318.48 504215.55 211.92000000000002 50495.80000000000001 235.59999999999997 468.075
+      C 259.28 341.14 324.4 276.475 442.8 264.5 Z" fill="#a8957a"/>
+    <path d="M 339.2 444.125 C 472.4 492.025 50288.8 50428.74 502177.6 504119.75" stroke="#000" stroke-opacity="0.10" stroke-width="9.6" fill="none"/>
+    <path d="M 318.48 50443.11 C 428 50491.01 50244.4 504124.54 502133.20000000000002 504196.39" stroke="#000" stroke-opacity="0.08" stroke-width="8.6" fill="none"/>
+  </g>
+  <rect width="1000" height="1250" filter="url(#grlinencottonpoloa)" opacity="0.9"/>
+  <text x="500" y="1075" text-anchor="middle" fill="rgba(46,44,40,0.78)" font-family="Helvetica, Arial, sans-serif" font-size="28" letter-spacing="6.2" style="text-transform:uppercase">Linen-Cotton Polo</text>
+  <text x="500" y="1122.6" text-anchor="middle" fill="rgba(46,44,40,0.55)" font-family="Helvetica, Arial, sans-serif" font-size="21" letter-spacing="4.2">₹1,899</text>
+</svg>

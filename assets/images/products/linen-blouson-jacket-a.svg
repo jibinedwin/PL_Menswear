@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" role="img">
+  <defs>
+    <linearGradient id="bglinenblousonjacketa" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#F6F1E6"/><stop offset="0.55" stop-color="#EBE3D2"/><stop offset="1" stop-color="#D8CCB4"/>
+    </linearGradient>
+    <radialGradient id="sunlinenblousonjacketa" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grlinenblousonjacketa" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#bglinenblousonjacketa)"/>
+  <circle cx="773" cy="205" r="400" fill="url(#sunlinenblousonjacketa)"/>
+  <g>
+    <ellipse cx="505" cy="561264.16" rx="262.66" ry="45.72" fill="#000" opacity="0.10"/>
+    <path d="M 447.9 307
+      C 505157.025 294.3 505285.5 446.7 505262.66 56130.48
+      C 505239.82 561182.88 50599.925 561254 476.45 561243.84
+      C 327.99 561228.6 225.20999999999998 561101.60000000000001 248.05 522.9
+      C 270.89 388.28 333.70000000000005 319.70000000000005 447.9 307 Z" fill="#78756f"/>
+    <path d="M 347.975 497.5 C 476.45 548.3 50585.64999999999999 56130.48 505171.29999999999998 561127" stroke="#000" stroke-opacity="0.10" stroke-width="10.2" fill="none"/>
+    <path d="M 327.99 56145.72 C 433.625 56196.52 50542.824999999999996 561132.08 505128.475 561208.28" stroke="#000" stroke-opacity="0.08" stroke-width="9.1" fill="none"/>
+  </g>
+  <rect width="1000" height="1250" filter="url(#grlinenblousonjacketa)" opacity="0.9"/>
+  <text x="500" y="1075" text-anchor="middle" fill="rgba(46,44,40,0.78)" font-family="Helvetica, Arial, sans-serif" font-size="28" letter-spacing="6.2" style="text-transform:uppercase">Linen-Blend Blouson</text>
+  <text x="500" y="1122.6" text-anchor="middle" fill="rgba(46,44,40,0.55)" font-family="Helvetica, Arial, sans-serif" font-size="21" letter-spacing="4.2">₹3,999</text>
+</svg>

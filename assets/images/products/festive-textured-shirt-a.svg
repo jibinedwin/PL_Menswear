@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" role="img">
+  <defs>
+    <linearGradient id="bgfestivetexturedshirta" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#F6F1E6"/><stop offset="0.55" stop-color="#EBE3D2"/><stop offset="1" stop-color="#D8CCB4"/>
+    </linearGradient>
+    <radialGradient id="sunfestivetexturedshirta" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grfestivetexturedshirta" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#bgfestivetexturedshirta)"/>
+  <circle cx="624" cy="211" r="400" fill="url(#sunfestivetexturedshirta)"/>
+  <g>
+    <ellipse cx="481" cy="568244.92000000000002" rx="249.78" ry="42.39" fill="#000" opacity="0.10"/>
+    <path d="M 426.7 332.5
+      C 481149.32500000000002 320.725 481271.5 462.025 481249.78 56828.259999999999998
+      C 481228.06 568169.56 48195.02499999999999 568235.5 453.85 568226.07999999999998
+      C 312.66999999999996 568211.95000000000002 214.93 56894.2 236.65 532.675
+      C 258.37 407.86 318.1 344.275 426.7 332.5 Z" fill="#c5beb1"/>
+    <path d="M 331.67499999999995 509.125 C 453.85 556.225 48181.45 56828.259999999999998 481162.9 568117.75" stroke="#000" stroke-opacity="0.10" stroke-width="9.4" fill="none"/>
+    <path d="M 312.66999999999996 56842.39 C 413.125 56889.49 48140.725 568122.46000000000001 481122.175 568193.10999999999999" stroke="#000" stroke-opacity="0.08" stroke-width="8.5" fill="none"/>
+  </g>
+  <rect width="1000" height="1250" filter="url(#grfestivetexturedshirta)" opacity="0.9"/>
+  <text x="500" y="1075" text-anchor="middle" fill="rgba(46,44,40,0.78)" font-family="Helvetica, Arial, sans-serif" font-size="28" letter-spacing="6.2" style="text-transform:uppercase">Festive Textured Shirt</text>
+  <text x="500" y="1122.6" text-anchor="middle" fill="rgba(46,44,40,0.55)" font-family="Helvetica, Arial, sans-serif" font-size="21" letter-spacing="4.2">₹2,899</text>
+</svg>

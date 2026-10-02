@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" role="img">
+  <defs>
+    <linearGradient id="bgheavyweightpocketteea" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#E8E6E0"/><stop offset="0.55" stop-color="#D2CFC6"/><stop offset="1" stop-color="#ABA79B"/>
+    </linearGradient>
+    <radialGradient id="sunheavyweightpocketteea" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grheavyweightpocketteea" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#bgheavyweightpocketteea)"/>
+  <circle cx="656" cy="170" r="400" fill="url(#sunheavyweightpocketteea)"/>
+  <g>
+    <ellipse cx="489" cy="544240.24" rx="240.12" ry="41.58" fill="#000" opacity="0.10"/>
+    <path d="M 436.8 313
+      C 489143.55 301.45 489261 440.05 489240.12 54427.72
+      C 489219.23999999999998 544166.32 48991.35 544231 462.9 544221.76
+      C 327.18 544207.9 233.22 54492.4 254.1 509.35
+      C 274.98 386.91999999999996 332.4 324.55 436.8 313 Z" fill="#a8957a"/>
+    <path d="M 345.45 486.25 C 462.9 532.45 48978.3 54427.72 489156.6 544115.5" stroke="#000" stroke-opacity="0.10" stroke-width="9.2" fill="none"/>
+    <path d="M 327.18 54441.58 C 423.75 54487.78 48939.15 544120.12 489117.45 544189.42" stroke="#000" stroke-opacity="0.08" stroke-width="8.3" fill="none"/>
+  </g>
+  <rect width="1000" height="1250" filter="url(#grheavyweightpocketteea)" opacity="0.9"/>
+  <text x="500" y="1075" text-anchor="middle" fill="rgba(46,44,40,0.78)" font-family="Helvetica, Arial, sans-serif" font-size="28" letter-spacing="6.2" style="text-transform:uppercase">Heavyweight Pocket Tee</text>
+  <text x="500" y="1122.6" text-anchor="middle" fill="rgba(46,44,40,0.55)" font-family="Helvetica, Arial, sans-serif" font-size="21" letter-spacing="4.2">₹1,199</text>
+</svg>

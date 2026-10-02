@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img">
+  <defs>
+    <linearGradient id="bglook02" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#F3EDE0"/><stop offset="0.55" stop-color="#E6DAC4"/><stop offset="1" stop-color="#CDBB9C"/>
+    </linearGradient>
+    <radialGradient id="sunlook02" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grlook02" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bglook02)"/>
+  <circle cx="923" cy="493" r="546" fill="url(#sunlook02)"/>
+  <rect x="0" y="648" width="1200" height="252" fill="#CDBB9C" opacity="0.5"/>
+  <rect x="604" y="126" width="25" height="522" fill="#2E2C28" opacity="0.12"/>
+  <rect x="926" y="193" width="47" height="455" fill="#2E2C28" opacity="0.09"/>
+  <rect x="259" y="147" width="31" height="501" fill="#2E2C28" opacity="0.09"/>
+  <g fill="#2E2C28" opacity="0.92">
+    <circle cx="568.2128622662276" cy="194.7" r="34.3"/>
+    <path d="M 531.5 650.0
+      L 524.1 503.1
+      C 519.3 454.2 514.4 434.6 514.4 395.4
+      C 514.4 346.4 504.6 326.9 499.7 297.5
+      C 494.8 268.1 504.6 248.5 524.1 238.7
+      C 543.7 228.9 592.7 228.9 612.3 238.7
+      C 631.9 248.5 641.7 268.1 636.8 297.5
+      C 631.9 326.9 622.1 346.4 622.1 395.4
+      C 622.1 434.6 617.2 454.2 612.3 503.1
+      L 604.9 650.0
+      L 580.5 650.0
+      L 578.0 542.3
+      L 558.4 542.3
+      L 556.0 650.0 Z"/>
+    <ellipse cx="568.2128622662276" cy="664.6839340050053" rx="127.29871662916617" ry="19.58441794294864" fill="#000" opacity="0.14"/>
+  </g>
+  <rect width="1200" height="900" filter="url(#grlook02)" opacity="0.9"/>
+  <text x="72" y="819" text-anchor="start" fill="rgba(46,44,40,0.72)" font-family="Helvetica, Arial, sans-serif" font-size="26" letter-spacing="5.7" style="text-transform:uppercase">CASUAL WEEKEND</text>
+  <text x="72" y="868.5" fill="rgba(46,44,40,0.72)" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="2.9">THE SEASON’S LOOKBOOK</text>
+</svg>

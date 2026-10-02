@@ -1,0 +1,1061 @@
+Build a premium, modern men's fashion website for a clothing brand called PL Mens Wear. The website should take inspiration from the overall visual quality, editorial presentation, spacious layouts, product discovery flow, and premium menswear experience of modern Indian fashion e-commerce websites such as Indian Terrain(https://indianterrain.com/), while maintaining completely original branding, content, imagery, colors, layouts, and UI components. Do not copy Indian Terrain's logo, name, text, images, videos, product names, or proprietary assets.
+
+## 1. BRAND DIRECTION
+
+Create an upscale men's clothing brand focused on:
+
+* Premium everyday menswear
+* Modern Indian fashion
+* Smart casual clothing
+* Office wear
+* Weekend wear
+* Travel wear
+* Festive clothing
+* Comfortable premium fabrics
+* Contemporary fits
+* Timeless designs
+
+The brand should communicate:
+
+**Premium • Masculine • Modern • Confident • Comfortable • Sophisticated**
+
+Use a strong editorial fashion aesthetic rather than making the website look like a generic online store.
+
+---
+
+## 2. TECHNOLOGY
+
+Use:
+
+* HTML5
+* CSS3
+* Vanilla JavaScript
+* Fetch API where required
+* Responsive design
+* CSS Grid
+* CSS Flexbox
+* CSS animations and transitions
+* Google Fonts or locally hosted fonts
+* SVG icons where appropriate
+
+Do not use:
+
+* React
+* Vue
+* Angular
+* TypeScript
+* Tailwind CSS
+* Bootstrap
+* Node.js frontend frameworks
+
+Keep the frontend clean, modular, responsive, accessible, and easy to maintain.
+
+---
+
+# 3. VISUAL STYLE
+
+Create a premium fashion-editorial appearance.
+
+### Overall appearance
+
+Use:
+
+* Large photography
+* Large typography
+* Generous whitespace
+* Strong visual hierarchy
+* Minimal borders
+* Subtle shadows
+* Smooth transitions
+* Editorial-style layouts
+* Neutral backgrounds
+* High-quality product photography
+* Full-width visual sections
+* Asymmetric image/text compositions where appropriate
+
+The design should feel closer to a premium fashion magazine combined with a modern e-commerce store.
+
+Avoid:
+
+* Excessive gradients
+* Excessive rounded cards
+* Cheap-looking UI
+* Excessive shadows
+* Bright neon colors
+* Crowded layouts
+* Too many animations
+* Generic bootstrap-style components
+
+---
+
+# 4. COLOR SYSTEM
+
+Create an elegant masculine palette.
+
+Primary colors:
+
+* Off-white / Ivory
+* Warm beige
+* Charcoal
+* Deep black
+* Dark brown
+* Stone grey
+
+Accent colors can include:
+
+* Olive
+* Muted navy
+* Terracotta
+* Sand
+* Burgundy
+
+Use the accent color sparingly.
+
+The website should primarily feel neutral and sophisticated.
+
+---
+
+# 5. TYPOGRAPHY
+
+Use a premium typography combination.
+
+Possible direction:
+
+* Elegant serif font for major editorial headings
+* Clean modern sans-serif for navigation, buttons and product information
+
+Create a strong typography hierarchy:
+
+* Large hero heading
+* Medium section headings
+* Small uppercase labels
+* Clean product names
+* Subtle supporting text
+* Clear pricing
+
+Use letter spacing selectively for uppercase navigation and category labels.
+
+---
+
+# 6. TOP PROMOTIONAL BAR
+
+Create a thin announcement bar at the top.
+
+Examples:
+
+**FREE SHIPPING ABOVE ₹1999**
+
+**7-DAY EASY RETURNS**
+
+**NEW SEASON — NOW LIVE**
+
+Allow the promotional message to be easily changed.
+
+On mobile, keep it compact.
+
+---
+
+# 7. HEADER / NAVIGATION
+
+Create a premium sticky header.
+
+Desktop layout:
+
+LEFT:
+
+* Brand logo
+
+CENTER:
+
+* Shop
+* New Arrivals
+* Collections
+* Clothing
+* Occasions
+* About
+
+RIGHT:
+
+* Search
+* Account
+* Wishlist
+* Cart
+
+The navigation should support large dropdown/mega-menu panels.
+
+### Mega menu
+
+When hovering/clicking "Shop", display categories such as:
+
+CLOTHING
+
+* Shirts
+* T-Shirts
+* Polos
+* Trousers
+* Jeans
+* Shorts
+* Jackets
+
+COLLECTIONS
+
+* New Arrivals
+* Best Sellers
+* Linen Edit
+* Essential Collection
+* Premium Collection
+
+OCCASIONS
+
+* Work
+* Weekend
+* Travel
+* Festive
+* Evening
+
+Include a large promotional image inside the mega menu.
+
+---
+
+# 8. HERO SECTION
+
+Create a full-width cinematic hero section.
+
+Use a high-quality original men's fashion image.
+
+Example concept:
+
+A stylish Indian male model wearing the brand's latest collection in an architectural or natural environment.
+
+Hero content:
+
+SMALL LABEL:
+**THE NEW SEASON**
+
+MAIN HEADING:
+
+**MADE FOR EVERY MOMENT**
+
+DESCRIPTION:
+
+"Modern menswear designed for work, weekends, travel and everything in between."
+
+BUTTONS:
+
+**SHOP NEW ARRIVALS**
+
+**EXPLORE COLLECTION**
+
+Use a large background image/video with subtle overlay.
+
+Add smooth entrance animations.
+
+The hero should immediately communicate that this is a premium fashion brand.
+
+---
+
+# 9. SHOP BY OCCASION
+
+Create an editorial section called:
+
+**DRESS FOR THE MOMENT**
+
+Create five large visual categories:
+
+* WORK
+* WEEKEND
+* TRAVEL
+* FESTIVE
+* EVENING
+
+Each category should have:
+
+* Large image
+* Small category label
+* Short description
+* Explore link
+
+Use a responsive grid.
+
+Desktop:
+
+Large asymmetric editorial layout.
+
+Mobile:
+
+Stacked image cards.
+
+---
+
+# 10. SHOP BY CATEGORY
+
+Create:
+
+**THE ESSENTIAL WARDROBE**
+
+Subtitle:
+
+"Timeless pieces designed to become everyday favourites."
+
+Display four major categories:
+
+### SHIRTS
+
+"Sharp silhouettes for every occasion."
+
+### TROUSERS
+
+"Refined comfort from workday to weekend."
+
+### POLOS
+
+"Relaxed essentials with a polished finish."
+
+### JEANS
+
+"Everyday denim built for modern living."
+
+Each category should have a large product/lifestyle image and an "Explore" action.
+
+---
+
+# 11. NEW ARRIVALS
+
+Create a premium product carousel.
+
+Heading:
+
+**NEW ARRIVALS**
+
+Supporting text:
+
+"Fresh silhouettes. Refined fabrics. A new season of menswear."
+
+Display 4–5 products on desktop.
+
+Each product card should contain:
+
+* Product image
+* Product name
+* Category
+* Price
+* Discount price if available
+* Color indicator
+* Wishlist icon
+* Quick view
+* Add to bag
+
+Use large image areas with minimal UI.
+
+Hover behavior:
+
+* Slight image zoom
+* Secondary product image
+* Quick action buttons
+* Smooth transition
+
+Do not overdecorate the product card.
+
+---
+
+# 12. FEATURED COLLECTION
+
+Create a large editorial split section.
+
+LEFT:
+
+Large lifestyle image.
+
+RIGHT:
+
+Collection name:
+
+**THE LINEN EDIT**
+
+Description:
+
+"Lightweight textures and effortless silhouettes designed for warm days."
+
+Buttons:
+
+**SHOP COLLECTION**
+
+**DISCOVER THE STORY**
+
+Create several similar collection sections such as:
+
+* Summer Edit
+* Essential Collection
+* Premium Linen
+* Weekend Collection
+* Festive Edit
+
+---
+
+# 13. PRODUCT SHOWCASE
+
+Create a section called:
+
+**WORN IN MOTION**
+
+Instead of displaying only static product cards, present clothing in lifestyle situations.
+
+For example:
+
+* Model wearing shirt
+* Model wearing trousers
+* Model wearing polo
+* Model wearing casual jacket
+
+Add a product information overlay:
+
+**RELAXED LINEN SHIRT**
+
+₹2,499
+
+**SHOP NOW**
+
+Allow horizontal scrolling on desktop and mobile.
+
+---
+
+# 14. BEST SELLERS
+
+Create:
+
+**WHAT MEN ARE WEARING**
+
+Show popular products.
+
+Include:
+
+* Product image
+* Product name
+* Price
+* Rating
+* Number of reviews
+* Available colors
+* Wishlist
+* Quick add
+
+Use subtle hover animations.
+
+---
+
+# 15. BRAND STORY
+
+Create a full-width editorial storytelling section.
+
+Heading:
+
+**DESIGNED FOR THE WAY YOU LIVE**
+
+Content should communicate:
+
+"Our clothing is designed around real life — long workdays, weekend escapes, travel, celebrations and everything between."
+
+Use:
+
+* Large lifestyle image
+* Editorial typography
+* Minimal text
+* "Our Story →" link
+
+Do not use generic corporate About Us styling.
+
+Make it feel like a fashion campaign.
+
+---
+
+# 16. PREMIUM FABRIC / QUALITY SECTION
+
+Create a section highlighting craftsmanship.
+
+Title:
+
+**MADE TO FEEL AS GOOD AS IT LOOKS**
+
+Create four features:
+
+**PREMIUM FABRICS**
+
+Carefully selected materials for comfort.
+
+**MODERN FITS**
+
+Designed around contemporary silhouettes.
+
+**QUALITY CRAFTSMANSHIP**
+
+Attention to construction and finishing.
+
+**EVERYDAY COMFORT**
+
+Built for long days and changing occasions.
+
+Use small minimalist icons or typography rather than large colorful icons.
+
+---
+
+# 17. LOOKBOOK
+
+Create a visual lookbook.
+
+Heading:
+
+**THE SEASON'S LOOKBOOK**
+
+Display a masonry-style image grid.
+
+Example:
+
+* Office look
+* Casual weekend
+* Travel outfit
+* Festive outfit
+* Evening outfit
+
+Clicking an image should open a full-screen lightbox.
+
+---
+
+# 18. CUSTOMER REVIEWS
+
+Create a minimal testimonial section.
+
+Heading:
+
+**WHAT OUR CUSTOMERS SAY**
+
+Display reviews in a horizontal carousel.
+
+Each review:
+
+★★★★★
+
+"The fit is excellent and the fabric feels premium."
+
+— Customer Name
+
+Do not use fake reviews in production. Use placeholder content during development and make the data easy to replace.
+
+---
+
+# 19. MEMBERSHIP / NEWSLETTER
+
+Create an elegant dark section.
+
+Heading:
+
+**JOIN THE CLUB**
+
+Description:
+
+"Be the first to discover new collections, exclusive offers and stories from the brand."
+
+Email input:
+
+**Enter your email**
+
+Button:
+
+**JOIN NOW**
+
+Keep this section visually minimal.
+
+---
+
+# 20. FOOTER
+
+Create a large premium footer.
+
+Columns:
+
+### SHOP
+
+* New Arrivals
+* Shirts
+* T-Shirts
+* Polos
+* Trousers
+* Jeans
+* Shorts
+* Shop All
+
+### COLLECTIONS
+
+* Essentials
+* Linen Edit
+* Premium
+* New Season
+* Best Sellers
+
+### HELP
+
+* Contact
+* FAQs
+* Shipping
+* Returns
+* Track Order
+* Size Guide
+
+### ABOUT
+
+* Our Story
+* Journal
+* Stores
+* Careers
+
+Include:
+
+* Social media icons
+* Newsletter
+* Payment icons
+* Copyright
+* Privacy Policy
+* Terms & Conditions
+
+---
+
+# 21. PRODUCT LISTING PAGE
+
+Create a professional PLP.
+
+Top:
+
+**MEN'S SHIRTS**
+
+"Explore our collection of premium shirts designed for modern everyday dressing."
+
+Controls:
+
+* Filter
+* Sort
+* View grid
+* View list
+
+Filters:
+
+* Category
+* Size
+* Color
+* Price
+* Fit
+* Fabric
+* Collection
+* Availability
+
+Product grid:
+
+Desktop: 4 columns
+
+Tablet: 3 columns
+
+Mobile: 2 columns
+
+Use lazy loading for images.
+
+---
+
+# 22. PRODUCT DETAILS PAGE
+
+Create an elegant product page.
+
+LEFT:
+
+Large product image gallery.
+
+RIGHT:
+
+Product information.
+
+Display:
+
+PRODUCT NAME
+
+★★★★★
+
+₹2,499
+
+MRP ₹2,999
+
+You Save ₹500
+
+Color
+
+Size:
+
+S M L XL XXL
+
+Size Guide
+
+Quantity selector
+
+**ADD TO BAG**
+
+**BUY NOW**
+
+Wishlist
+
+Then:
+
+* Product description
+* Fabric
+* Fit
+* Care instructions
+* Delivery information
+* Returns
+* Product details
+
+Use accordion components for secondary information.
+
+---
+
+# 23. SEARCH EXPERIENCE
+
+Create a modern search overlay.
+
+When clicking Search:
+
+Display full-screen or large overlay.
+
+Input:
+
+**Search for shirts, trousers, polos...**
+
+Below:
+
+TRENDING SEARCHES
+
+* Linen Shirts
+* Polos
+* Trousers
+* New Arrivals
+* Best Sellers
+
+Show live search results while typing.
+
+---
+
+# 24. CART
+
+Create a slide-out cart drawer.
+
+Display:
+
+* Product image
+* Product name
+* Size
+* Color
+* Quantity
+* Price
+* Remove
+
+Bottom:
+
+Subtotal
+
+Shipping information
+
+**CHECKOUT**
+
+**VIEW CART**
+
+Add progress message:
+
+"Add ₹500 more to unlock free shipping."
+
+---
+
+# 25. RESPONSIVE DESIGN
+
+The website must work perfectly on:
+
+* Desktop
+* Laptop
+* Tablet
+* Mobile
+
+Desktop:
+
+* Large editorial layouts
+* Hover interactions
+* Mega menu
+* Multi-column product grids
+
+Mobile:
+
+* Hamburger menu
+* Compact header
+* 2-column product grid
+* Swipeable carousels
+* Large touch targets
+* Sticky add-to-cart where appropriate
+
+Do not simply shrink the desktop layout.
+
+Redesign sections intelligently for mobile.
+
+---
+
+# 26. ANIMATION SYSTEM
+
+Use premium subtle animations.
+
+Examples:
+
+* Fade-up on scroll
+* Image reveal
+* Image zoom
+* Text reveal
+* Smooth hover transitions
+* Product image switching
+* Horizontal carousel movement
+* Menu animations
+* Cart drawer animation
+* Modal transitions
+
+Animation timing should generally feel smooth and restrained.
+
+Avoid excessive animation that hurts usability.
+
+---
+
+# 27. IMAGE DIRECTION
+
+Use high-quality original fashion imagery.
+
+Image style:
+
+* Indian male models
+* Premium menswear
+* Natural poses
+* Architectural environments
+* Urban streets
+* Modern interiors
+* Outdoor landscapes
+* Neutral backgrounds
+* Warm natural lighting
+* Editorial photography
+
+Create a consistent visual language throughout the website.
+
+Do not use Indian Terrain's copyrighted images.
+
+If external images are used during development, download/use only images with appropriate usage rights and keep them locally organized.
+
+Recommended structure:
+
+assets/
+
+├── images/
+│   ├── hero/
+│   ├── categories/
+│   ├── products/
+│   ├── collections/
+│   ├── lookbook/
+│   └── lifestyle/
+
+├── icons/
+
+└── videos/
+
+---
+
+# 28. JAVASCRIPT FUNCTIONALITY
+
+Implement:
+
+* Mobile navigation
+* Mega menu
+* Search overlay
+* Product filtering
+* Product sorting
+* Product carousel
+* Wishlist
+* Cart drawer
+* Quantity controls
+* Quick view
+* Product image gallery
+* Size selection
+* FAQ accordion
+* Testimonials carousel
+* Lookbook lightbox
+* Newsletter validation
+* Scroll animations
+* Sticky navigation
+* Back-to-top button
+
+Keep JavaScript modular.
+
+Use normal JavaScript functions rather than unnecessarily complicated abstractions.
+
+---
+
+# 29. ACCESSIBILITY
+
+Implement:
+
+* Semantic HTML
+* Proper labels
+* Keyboard navigation
+* Focus states
+* Alt text
+* ARIA labels where required
+* Accessible buttons
+* Good color contrast
+* Reduced-motion support
+
+---
+
+# 30. PERFORMANCE
+
+Optimize the website for fast loading.
+
+Implement:
+
+* Lazy-loaded images
+* WebP/AVIF where possible
+* Proper image dimensions
+* Minified production CSS/JS
+* Deferred non-critical JavaScript
+* Efficient animations
+* Avoid unnecessary libraries
+* Avoid huge unoptimized videos
+* Responsive image sizes
+
+Target excellent Core Web Vitals.
+
+---
+
+# 31. SEO
+
+Add:
+
+* Proper page titles
+* Meta descriptions
+* Open Graph metadata
+* Semantic headings
+* Product structured data
+* Breadcrumbs
+* Canonical URLs
+* Descriptive image alt text
+* Clean URLs
+
+Example:
+
+/shop
+
+/shop/shirts
+
+/shop/trousers
+
+/shop/polos
+
+/shop/jeans
+
+/collections/new-arrivals
+
+/collections/linen
+
+/product/premium-linen-shirt
+
+/about
+
+/contact
+
+---
+
+# 32. PROJECT STRUCTURE
+
+Use a clean structure such as:
+
+```text
+mens-fashion-store/
+│
+├── index.html
+│
+├── pages/
+│   ├── shop.html
+│   ├── product.html
+│   ├── collection.html
+│   ├── about.html
+│   ├── contact.html
+│   └── lookbook.html
+│
+├── css/
+│   ├── base.css
+│   ├── header.css
+│   ├── hero.css
+│   ├── products.css
+│   ├── sections.css
+│   ├── footer.css
+│   └── responsive.css
+│
+├── js/
+│   ├── main.js
+│   ├── navigation.js
+│   ├── products.js
+│   ├── cart.js
+│   ├── wishlist.js
+│   └── search.js
+│
+├── assets/
+│   ├── images/
+│   ├── icons/
+│   └── videos/
+│
+└── data/
+    └── products.json
+```
+
+---
+
+# 33. IMPORTANT DESIGN RULE
+
+The final result should **not look like a template**.
+
+It should feel like a real premium Indian menswear brand.
+
+Prioritize:
+
+**Photography → Typography → Whitespace → Product presentation → Storytelling → Interaction**
+
+rather than:
+
+**Cards → Gradients → Shadows → Excessive UI elements**
+
+Every section should have a clear visual purpose.
+
+The homepage should feel like a fashion campaign first and an e-commerce website second.
+
+---
+
+# 34. FINAL QUALITY CHECK
+
+Before completing the project, verify:
+
+* Navigation works
+* Mega menu works
+* Search works
+* Product filtering works
+* Product sorting works
+* Product details work
+* Cart works
+* Wishlist works
+* Mobile navigation works
+* All buttons have meaningful actions
+* Images load correctly
+* No broken links
+* No console errors
+* No unused CSS/JS
+* No duplicate components
+* No horizontal overflow
+* Responsive layouts work at all major breakpoints
+* Forms validate correctly
+* Keyboard navigation works
+* Images have alt text
+* Website loads quickly
+* Website looks premium on both desktop and mobile
+
+Finally, inspect the entire website as a user and refine spacing, typography, alignment, image cropping, hover states, responsiveness, and visual consistency until it looks like a professionally designed premium men's fashion brand.

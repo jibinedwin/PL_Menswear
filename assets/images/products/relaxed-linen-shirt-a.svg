@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" role="img">
+  <defs>
+    <linearGradient id="bgrelaxedlinenshirta" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#E8E6E0"/><stop offset="0.55" stop-color="#D2CFC6"/><stop offset="1" stop-color="#ABA79B"/>
+    </linearGradient>
+    <radialGradient id="sunrelaxedlinenshirta" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grrelaxedlinenshirta" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#bgrelaxedlinenshirta)"/>
+  <circle cx="718" cy="177" r="400" fill="url(#sunrelaxedlinenshirta)"/>
+  <g>
+    <ellipse cx="531" cy="508258.96000000000004" rx="250.24" ry="44.82" fill="#000" opacity="0.10"/>
+    <path d="M 476.6 259
+      C 531149.60000000000002 246.55 531272 395.95 531250.24 50829.88
+      C 531228.48 508179.28 53195.19999999999999 508249 503.8 508239.04
+      C 362.36 508224.1 264.44 50899.60000000000001 286.2 470.65
+      C 307.96000000000004 338.67999999999995 367.8 271.45000000000005 476.6 259 Z" fill="#c5beb1"/>
+    <path d="M 381.4 445.75 C 503.8 495.55 53181.6 50829.88 531163.2 508124.5" stroke="#000" stroke-opacity="0.10" stroke-width="10.0" fill="none"/>
+    <path d="M 362.36 50844.82 C 463 50894.62 53140.8 508129.48000000000002 531122.4 508204.17999999999998" stroke="#000" stroke-opacity="0.08" stroke-width="9.0" fill="none"/>
+  </g>
+  <rect width="1000" height="1250" filter="url(#grrelaxedlinenshirta)" opacity="0.9"/>
+  <text x="500" y="1075" text-anchor="middle" fill="rgba(46,44,40,0.78)" font-family="Helvetica, Arial, sans-serif" font-size="28" letter-spacing="6.2" style="text-transform:uppercase">Relaxed Linen Shirt</text>
+  <text x="500" y="1122.6" text-anchor="middle" fill="rgba(46,44,40,0.55)" font-family="Helvetica, Arial, sans-serif" font-size="21" letter-spacing="4.2">₹2,499</text>
+</svg>

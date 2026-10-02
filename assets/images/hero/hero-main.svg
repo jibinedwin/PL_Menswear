@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img">
+  <defs>
+    <linearGradient id="bgheromain" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#4A4540"/><stop offset="0.55" stop-color="#332F2B"/><stop offset="1" stop-color="#201D1A"/>
+    </linearGradient>
+    <radialGradient id="sunheromain" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grheromain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bgheromain)"/>
+  <circle cx="1106" cy="394" r="1018" fill="url(#sunheromain)"/>
+  <rect x="0" y="675" width="1920" height="405" fill="#201D1A" opacity="0.5"/>
+  <rect x="1339" y="167" width="39" height="509" fill="#141210" opacity="0.13"/>
+  <rect x="482" y="263" width="41" height="413" fill="#141210" opacity="0.10"/>
+  <rect x="584" y="319" width="80" height="356" fill="#141210" opacity="0.06"/>
+  <rect x="135" y="196" width="81" height="479" fill="#141210" opacity="0.14"/>
+  <g fill="#141210" opacity="0.92">
+    <circle cx="996.6923589259386" cy="153.1" r="39.5"/>
+    <path d="M 954.4 677.4
+      L 945.9 508.3
+      C 940.3 451.9 934.7 429.4 934.7 384.3
+      C 934.7 327.9 923.4 305.3 917.8 271.5
+      C 912.1 237.7 923.4 215.1 945.9 203.8
+      C 968.5 192.6 1024.9 192.6 1047.4 203.8
+      C 1070.0 215.1 1081.3 237.7 1075.6 271.5
+      C 1070.0 305.3 1058.7 327.9 1058.7 384.3
+      C 1058.7 429.4 1053.1 451.9 1047.4 508.3
+      L 1039.0 677.4
+      L 1010.8 677.4
+      L 1008.0 553.4
+      L 985.4 553.4
+      L 982.6 677.4 Z"/>
+    <ellipse cx="996.6923589259386" cy="694.3559419496842" rx="146.59224857526274" ry="22.552653626963497" fill="#000" opacity="0.14"/>
+  </g>
+  <rect width="1920" height="1080" filter="url(#grheromain)" opacity="0.9"/>
+  <text x="115.19999999999999" y="982.8" text-anchor="start" fill="rgba(238,231,216,0.8)" font-family="Helvetica, Arial, sans-serif" font-size="42" letter-spacing="9.2" style="text-transform:uppercase">THE NEW SEASON</text>
+  <text x="115.19999999999999" y="1042.2" fill="rgba(238,231,216,0.8)" font-family="Helvetica, Arial, sans-serif" font-size="25" letter-spacing="4.5">PL MENS WEAR — AUTUMN EDITORIAL</text>
+</svg>

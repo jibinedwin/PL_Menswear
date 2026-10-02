@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img">
+  <defs>
+    <linearGradient id="bgoccweekend" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#F3EDE0"/><stop offset="0.55" stop-color="#E6DAC4"/><stop offset="1" stop-color="#CDBB9C"/>
+    </linearGradient>
+    <radialGradient id="sunoccweekend" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="groccweekend" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#bgoccweekend)"/>
+  <circle cx="807" cy="675" r="761" fill="url(#sunoccweekend)"/>
+  <rect x="0" y="947" width="1200" height="553" fill="#CDBB9C" opacity="0.5"/>
+  <rect x="669" y="203" width="50" height="743" fill="#2E2C28" opacity="0.10"/>
+  <rect x="563" y="368" width="35" height="578" fill="#2E2C28" opacity="0.07"/>
+  <g fill="#2E2C28" opacity="0.92">
+    <circle cx="622.4175683967769" cy="174.6" r="58.3"/>
+    <path d="M 560.0 948.7
+      L 547.5 699.0
+      C 539.2 615.8 530.9 582.5 530.9 515.9
+      C 530.9 432.7 514.2 399.4 505.9 349.4
+      C 497.6 299.5 514.2 266.2 547.5 249.5
+      C 580.8 232.9 664.0 232.9 697.3 249.5
+      C 730.6 266.2 747.3 299.5 738.9 349.4
+      C 730.6 399.4 714.0 432.7 714.0 515.9
+      C 714.0 582.5 705.7 615.8 697.3 699.0
+      L 684.8 948.7
+      L 643.2 948.7
+      L 639.1 765.6
+      L 605.8 765.6
+      L 601.6 948.7 Z"/>
+    <ellipse cx="622.4175683967769" cy="973.672376290476" rx="216.40494521157817" ry="33.29306849408895" fill="#000" opacity="0.14"/>
+  </g>
+  <rect width="1200" height="1500" filter="url(#groccweekend)" opacity="0.9"/>
+  <text x="72" y="1365" text-anchor="start" fill="rgba(46,44,40,0.72)" font-family="Helvetica, Arial, sans-serif" font-size="26" letter-spacing="5.7" style="text-transform:uppercase">WEEKEND</text>
+  <text x="72" y="1447.5" fill="rgba(46,44,40,0.72)" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="2.9">EASY PIECES, CONSIDERED</text>
+</svg>

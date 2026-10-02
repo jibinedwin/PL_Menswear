@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" role="img">
+  <defs>
+    <linearGradient id="bgnoirontravelshirta" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#F3EDE0"/><stop offset="0.55" stop-color="#E6DAC4"/><stop offset="1" stop-color="#CDBB9C"/>
+    </linearGradient>
+    <radialGradient id="sunnoirontravelshirta" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grnoirontravelshirta" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter>
+  </defs>
+  <rect width="1000" height="1250" fill="url(#bgnoirontravelshirta)"/>
+  <circle cx="729" cy="259" r="400" fill="url(#sunnoirontravelshirta)"/>
+  <g>
+    <ellipse cx="533" cy="517240.24" rx="246.56" ry="41.58" fill="#000" opacity="0.10"/>
+    <path d="M 479.4 286
+      C 533147.4 274.45 533268 413.05 533246.56 51727.72
+      C 533225.12 517166.32 53393.8 517231 506.2 517221.76
+      C 366.84000000000003 517207.9 270.36 51792.4 291.79999999999995 482.35
+      C 313.24 359.91999999999996 372.20000000000005 297.55 479.4 286 Z" fill="#929fa6"/>
+    <path d="M 385.6 459.25 C 506.2 505.45 53380.39999999999999 51727.72 533160.79999999999998 517115.5" stroke="#000" stroke-opacity="0.10" stroke-width="9.2" fill="none"/>
+    <path d="M 366.84000000000003 51741.58 C 466 51787.78 53340.199999999999996 517120.12 533120.60000000000001 517189.42" stroke="#000" stroke-opacity="0.08" stroke-width="8.3" fill="none"/>
+  </g>
+  <rect width="1000" height="1250" filter="url(#grnoirontravelshirta)" opacity="0.9"/>
+  <text x="500" y="1075" text-anchor="middle" fill="rgba(46,44,40,0.78)" font-family="Helvetica, Arial, sans-serif" font-size="28" letter-spacing="6.2" style="text-transform:uppercase">No-Iron Travel Shirt</text>
+  <text x="500" y="1122.6" text-anchor="middle" fill="rgba(46,44,40,0.55)" font-family="Helvetica, Arial, sans-serif" font-size="21" letter-spacing="4.2">₹2,699</text>
+</svg>

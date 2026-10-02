@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img">
+  <defs>
+    <linearGradient id="bglook08" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#F3EDE0"/><stop offset="0.55" stop-color="#E6DAC4"/><stop offset="1" stop-color="#CDBB9C"/>
+    </linearGradient>
+    <radialGradient id="sunlook08" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grlook08" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bglook08)"/>
+  <circle cx="979" cy="425" r="549" fill="url(#sunlook08)"/>
+  <rect x="0" y="612" width="1200" height="288" fill="#CDBB9C" opacity="0.5"/>
+  <rect x="927" y="243" width="24" height="369" fill="#2E2C28" opacity="0.08"/>
+  <rect x="710" y="133" width="35" height="479" fill="#2E2C28" opacity="0.10"/>
+  <rect x="834" y="184" width="27" height="428" fill="#2E2C28" opacity="0.12"/>
+  <g fill="#2E2C28" opacity="0.92">
+    <circle cx="589.4541597738862" cy="179.0" r="32.8"/>
+    <path d="M 554.4 614.3
+      L 547.3 473.9
+      C 542.7 427.1 538.0 408.3 538.0 370.9
+      C 538.0 324.1 528.6 305.4 523.9 277.3
+      C 519.3 249.2 528.6 230.5 547.3 221.1
+      C 566.1 211.8 612.9 211.8 631.6 221.1
+      C 650.3 230.5 659.7 249.2 655.0 277.3
+      C 650.3 305.4 640.9 324.1 640.9 370.9
+      C 640.9 408.3 636.3 427.1 631.6 473.9
+      L 624.6 614.3
+      L 601.2 614.3
+      L 598.8 511.3
+      L 580.1 511.3
+      L 577.8 614.3 Z"/>
+    <ellipse cx="589.4541597738862" cy="628.2971060308441" rx="121.67954120613635" ry="18.719929416328668" fill="#000" opacity="0.14"/>
+  </g>
+  <rect width="1200" height="900" filter="url(#grlook08)" opacity="0.9"/>
+  <text x="72" y="819" text-anchor="start" fill="rgba(46,44,40,0.72)" font-family="Helvetica, Arial, sans-serif" font-size="26" letter-spacing="5.7" style="text-transform:uppercase">DENIM DAYS</text>
+  <text x="72" y="868.5" fill="rgba(46,44,40,0.72)" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="2.9">THE SEASON’S LOOKBOOK</text>
+</svg>
