@@ -27,13 +27,9 @@
       if (!link) return;
       item.addEventListener('mouseenter', function () { item.classList.add('is-open'); link.setAttribute('aria-expanded', 'true'); });
       item.addEventListener('mouseleave', function () { item.classList.remove('is-open'); link.setAttribute('aria-expanded', 'false'); });
-      link.addEventListener('click', function (e) {
-        // Let the link navigate; hovering handles the menu on desktop.
-        if (window.matchMedia('(min-width: 1081px)').matches) {
-          e.preventDefault();
-          var open = item.classList.toggle('is-open');
-          link.setAttribute('aria-expanded', String(open));
-        }
+      link.addEventListener('click', function () {
+        item.classList.remove('is-open');
+        link.setAttribute('aria-expanded', 'false');
       });
       document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape' && item.classList.contains('is-open')) {

@@ -34,7 +34,7 @@
       '  </div>' +
       '  <div class="pcard__info">' +
       '    <span class="pcard__cat">' + p.category + ' · ' + p.collection + '</span>' +
-      '    <h3 class="pcard__name"><a href="' + Data.base() + 'pages/product.html?id=' + p.id + '">' + p.name + '</a></h3>' +
+      '    <h3 class="pcard__name"><a href="#collections" data-quickview="' + p.id + '">' + p.name + '</a></h3>' +
       '    <div class="pcard__row">' +
       '      <span class="pcard__price">' + Data.formatPrice(p.price) + '</span>' +
       (off > 0 ? '<span class="pcard__mrp">' + Data.formatPrice(p.mrp) + '</span><span class="pcard__off">' + off + '% off</span>' : '') +
@@ -103,7 +103,7 @@
         var p = Data.getProductById(id);
         if (!p) return;
         html +=
-          '<a class="mtile" href="' + Data.base() + 'pages/product.html?id=' + p.id + '">' +
+          '<a class="mtile" href="#collections" data-quickview="' + p.id + '">' +
           '  <img src="' + Data.productImage(p.id, 'b') + '" alt="Model wearing the ' + p.name + '" loading="lazy" decoding="async">' +
           '  <div class="mtile__overlay">' +
           '    <span class="label">' + p.category + '</span>' +
@@ -151,7 +151,8 @@
       '<div class="modal__info">' +
       '  <span class="pcard__cat">' + p.category + ' · ' + p.collection + '</span>' +
       '  <h2 class="h-sub" style="margin-top:8px">' + p.name + '</h2>' +
-      '  <div class="pdp-pricing"><span class="pdp-price">' + Data.formatPrice(p.price) + '</span>' +
+      '  <p class="muted" style="margin-top:8px;font-size:14px;line-height:1.5">' + p.description + '</p>' +
+      '  <div class="pdp-pricing" style="margin-top:12px"><span class="pdp-price">' + Data.formatPrice(p.price) + '</span>' +
       (off > 0 ? '<span class="pdp-mrp">' + Data.formatPrice(p.mrp) + '</span><span class="pdp-save">Save ' + Data.formatPrice(p.mrp - p.price) + '</span>' : '') +
       '  </div>' +
       '  <div class="pdp-block"><span class="label">Colour</span><div class="swatch-row">' +
@@ -160,8 +161,7 @@
       '  <div class="pdp-block"><span class="label">Size</span><div class="size-row">' +
       p.sizes.map(function (s, i) { return '<button type="button" class="size-btn' + (i === Math.floor(p.sizes.length / 2) ? ' is-active' : '') + '">' + s + '</button>'; }).join('') +
       '  </div></div>' +
-      '  <div class="pdp-cta" style="grid-template-columns:1fr"><button class="btn btn--solid" data-add="' + p.id + '">Add to bag</button></div>' +
-      '  <a class="text-link" style="margin-top:22px" href="' + Data.base() + 'pages/product.html?id=' + p.id + '">View full details ' + UI.icon('arrow') + '</a>' +
+      '  <div class="pdp-cta" style="grid-template-columns:1fr;margin-top:18px"><button class="btn btn--solid" data-add="' + p.id + '">Add to bag</button></div>' +
       '</div>';
     qv.classList.add('is-open');
     Nav.lockScroll();
@@ -184,7 +184,7 @@
         '<div class="modal__info" style="grid-column:1/-1;text-align:center;padding-block:60px">' +
         '  <h2 class="h-sub">Your wishlist is empty</h2>' +
         '  <p class="muted" style="margin-top:10px">Tap the heart on any piece to save it here.</p>' +
-        '  <a class="btn btn--solid" style="margin-top:24px" href="' + Data.base() + 'pages/shop.html">Browse the collection</a>' +
+        '  <a class="btn btn--solid" style="margin-top:24px" href="#collections" data-qv-close>Explore collections</a>' +
         '</div>';
     } else {
       html =
@@ -194,7 +194,7 @@
         '  <div style="margin-top:18px">' +
         ids.map(function (p) {
           return '<div class="cart-line" data-wishline="' + p.id + '">' +
-            '  <a href="' + Data.base() + 'pages/product.html?id=' + p.id + '"><img src="' + Data.productImage(p.id) + '" alt="' + p.name + '" loading="lazy"></a>' +
+            '  <a href="#collections" data-quickview="' + p.id + '"><img src="' + Data.productImage(p.id) + '" alt="' + p.name + '" loading="lazy"></a>' +
             '  <div>' +
             '    <div class="cart-line__name">' + p.name + '</div>' +
             '    <div class="cart-line__meta">' + p.category + '</div>' +
@@ -257,8 +257,25 @@
     }
     var cat = params.get('category');
     if (cat) {
-      plpState.category = [cat];
-      setPageTitle(cat + "'s Edit");
+      if (cat === 'T-Shirts & Polos') {
+        plpState.category = ['T-Shirts', 'Polos'];
+        setPageTitle('T-Shirts & Polos');
+      } else if (cat === 'Jackets & Outerwears') {
+        plpState.category = ['Jackets'];
+        setPageTitle('Jackets & Outerwears');
+      } else if (cat === 'Denim') {
+        plpState.category = ['Jeans'];
+        setPageTitle('Denim Collection');
+      } else if (cat === 'Occassion wear' || cat === 'Occasion wear') {
+        plpState.preset = 'occasion:Festive';
+        setPageTitle('Occasion Wear');
+      } else if (cat === 'Accessories') {
+        plpState.category = ['Accessories'];
+        setPageTitle('Accessories');
+      } else {
+        plpState.category = [cat];
+        setPageTitle(cat + "'s Edit");
+      }
     }
     var coll = params.get('collection');
     if (coll) {

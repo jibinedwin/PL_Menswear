@@ -2,25 +2,6 @@
    PL MENS WEAR — HEADER, MEGA MENU, SEARCH, DRAWERS, MOBILE NAV
    ========================================================================== */
 
-/* ---------- Promo bar ---------- */
-.promo-bar {
-  background: var(--ink); color: var(--ivory);
-  font-size: 10.5px; letter-spacing: 0.3em; text-transform: uppercase;
-  overflow: hidden; position: relative;
-}
-.promo-bar__track {
-  display: flex; align-items: center; justify-content: center; gap: 12px;
-  height: 36px; position: relative;
-}
-.promo-bar__msg { position: absolute; opacity: 0; transition: opacity 0.6s var(--ease); text-align: center; padding-inline: 44px; white-space: nowrap; }
-.promo-bar__msg.is-active { opacity: 1; }
-.promo-bar__nav { position: absolute; right: 10px; display: flex; gap: 2px; }
-.promo-bar__nav button {
-  width: 26px; height: 26px; display: grid; place-items: center; color: rgba(245,241,232,0.55);
-  transition: color 0.25s var(--ease);
-}
-.promo-bar__nav button:hover { color: var(--ivory); }
-
 /* ---------- Header ---------- */
 .site-header {
   position: sticky; top: 0; z-index: 120;

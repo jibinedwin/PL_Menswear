@@ -16,7 +16,6 @@
   .brand__name { font-size: 19px; }
   .brand__tag { display: none; }
   .icon-btn { width: 40px; height: 40px; }
-  .promo-bar__msg { font-size: 9.5px; letter-spacing: 0.22em; padding-inline: 36px; }
   .hero { min-height: 86vh; }
   .hero__title { font-size: clamp(44px, 13vw, 72px); }
   .hero__actions .btn { min-height: 50px; padding-inline: 26px; }

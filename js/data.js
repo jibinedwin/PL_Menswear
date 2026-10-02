@@ -56,8 +56,8 @@
 
   var state = { products: null, config: null, pending: [] };
 
-  /* Root-relative base: pages inside /pages/ need to step up one level */
-  var BASE = window.location.pathname.indexOf('/pages/') !== -1 ? '../' : '';
+  /* Root-relative base: single page on root */
+  var BASE = '';
 
   function ready(fn) {
     if (state.products && state.config) { fn(); return; }

@@ -129,7 +129,7 @@
         '  <strong>Your bag is empty</strong>' +
         '  <p>Pieces you add will appear here.</p>' +
         '</div>';
-      els.foot.innerHTML = '<a class="btn btn--solid btn--block" href="' + Data.base() + 'pages/shop.html" data-cart-close-link>Continue shopping</a>';
+      els.foot.innerHTML = '<a class="btn btn--solid btn--block" href="#collections" data-cart-close-link>Continue shopping</a>';
       var cl = $('[data-cart-close-link]', els.foot);
       if (cl) { cl.addEventListener('click', function () { closeDrawer(); }); }
       return;
@@ -139,7 +139,7 @@
     list.forEach(function (li) {
       html +=
         '<div class="cart-line">' +
-        '  <a href="' + Data.base() + 'pages/product.html?id=' + li.id + '"><img src="' + Data.base() + li.image + '" alt="' + li.name + '" loading="lazy"></a>' +
+        '  <a href="#collections" data-quickview="' + li.id + '"><img src="' + Data.base() + li.image + '" alt="' + li.name + '" loading="lazy"></a>' +
         '  <div>' +
         '    <div class="cart-line__name">' + li.name + '</div>' +
         '    <div class="cart-line__meta">Size ' + li.size + (li.color ? ' · ' + li.color : '') + '</div>' +
@@ -171,7 +171,7 @@
       '<div class="cart-subtotal"><span class="label">Subtotal</span><strong>' + Data.formatPrice(sub) + '</strong></div>' +
       '<p class="cart-note">Shipping &amp; taxes calculated at checkout. Free shipping above ' + Data.formatPrice(FREE_SHIP) + '.</p>' +
       '<button class="btn btn--solid btn--block" data-cart-checkout>Checkout</button>' +
-      '<a class="btn btn--block" href="' + Data.base() + 'pages/shop.html" data-cart-close-link>View cart</a>';
+      '<a class="btn btn--block" href="#collections" data-cart-close-link>Continue browsing</a>';
     var cl2 = $('[data-cart-close-link]', els.foot);
     if (cl2) { cl2.addEventListener('click', function () { closeDrawer(); }); }
   }

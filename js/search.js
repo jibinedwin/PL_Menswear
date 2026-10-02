@@ -44,6 +44,7 @@
 
     els.overlay.addEventListener('click', function (e) {
       if (e.target.closest('[data-search-close]')) { close(); }
+      if (e.target.closest('.search-hit')) { close(); }
     });
     els.input.addEventListener('input', run);
     els.overlay.addEventListener('click', function (e) {
@@ -75,7 +76,7 @@
       html += '<p class="search-empty is-active">No pieces match that search — try “linen”, “polo” or “jeans”.</p>';
     } else {
       html += list.slice(0, 8).map(function (p) {
-        return '<a class="search-hit" href="' + Data.base() + 'pages/product.html?id=' + p.id + '">' +
+        return '<a class="search-hit" href="#collections" data-quickview="' + p.id + '">' +
           '<img src="' + Data.productImage(p.id, 'a') + '" alt="' + p.name + '" loading="lazy">' +
           '<span><span class="search-hit__name">' + p.name + '</span><br>' +
           '<span class="search-hit__meta">' + p.category + ' · ' + p.collection + '</span></span>' +
@@ -83,7 +84,7 @@
           '</a>';
       }).join('');
       if (list.length > 8) {
-        html += '<a class="btn btn--block" style="margin-top:18px" href="' + Data.base() + 'pages/shop.html?q=' + encodeURIComponent(q) + '">View all results</a>';
+        html += '<a class="btn btn--block" style="margin-top:18px" href="#collections" data-search-close>Browse all collections</a>';
       }
     }
     els.results.innerHTML = html;

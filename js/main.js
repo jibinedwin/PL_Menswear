@@ -10,9 +10,8 @@
   var UI = window.PLMWUI, Data = window.PLMW, Nav = window.PLMWNav,
       Wishlist = window.PLMWWishlist, Cart = window.PLMWCart;
 
-  /* ---------- Chrome (promo bar, mega menu, footer year) ---------- */
+  /* ---------- Chrome (mega menu, footer year) ---------- */
   function initChrome() {
-    UI.promoBar();
     Nav.megaMenu();
     var year = $('[data-year]');
     if (year) { year.textContent = String(new Date().getFullYear()); }
@@ -21,31 +20,6 @@
   /* ---------- Renders config-driven bits of chrome ---------- */
   function renderDynamicChrome() {
     Data.ready(function () {
-      /* promo bar messages come from site-config.json when available */
-      var bar = $('.promo-bar__track');
-      if (bar && !bar.hasAttribute('data-rendered')) {
-        var msgs = Data.getConfig().promoBar.messages;
-        bar.setAttribute('data-rendered', '1');
-        bar.innerHTML = msgs.map(function (m, i) {
-          return '<p class="promo-bar__msg' + (i === 0 ? ' is-active' : '') + '">' + m + '</p>';
-        }).join('') +
-        '<div class="promo-bar__nav">' +
-        '  <button data-promo-prev aria-label="Previous message">' + UI.icon('chevronLeft') + '</button>' +
-        '  <button data-promo-next aria-label="Next message">' + UI.icon('chevronRight') + '</button>' +
-        '</div>';
-        /* re-run rotation after re-render */
-        UI.promoBar();
-        var idx = 0;
-        var msgs2 = UI.$all('.promo-bar__msg', bar);
-        function show(n) {
-          idx = (n + msgs2.length) % msgs2.length;
-          msgs2.forEach(function (m, i) { m.classList.toggle('is-active', i === idx); });
-        }
-        var prev = $('[data-promo-prev]', bar), next = $('[data-promo-next]', bar);
-        if (prev) { prev.addEventListener('click', function () { show(idx - 1); }); }
-        if (next) { next.addEventListener('click', function () { show(idx + 1); }); }
-      }
-
       /* mega-menu promo tile image from config (first collection) */
       var promoImg = $('[data-mega-promo-img]');
       if (promoImg) {

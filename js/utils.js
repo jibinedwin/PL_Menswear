@@ -104,18 +104,6 @@
     toastTimer = setTimeout(function () { el.classList.remove('is-visible'); }, 2600);
   }
 
-  /* ---------- Promo bar rotation ---------- */
-  function promoBar() {
-    var msgs = $all('.promo-bar__msg');
-    if (msgs.length < 2) return;
-    var idx = 0;
-    setInterval(function () {
-      msgs[idx].classList.remove('is-active');
-      idx = (idx + 1) % msgs.length;
-      msgs[idx].classList.add('is-active');
-    }, 4200);
-  }
-
   /* ---------- Accordions (PDP + FAQ) ---------- */
   function accordions() {
     $all('.acc__btn, .filters__btn').forEach(function (btn) {
@@ -190,7 +178,6 @@
     backToTop: backToTop,
     revealInit: revealInit,
     toast: toast,
-    promoBar: promoBar,
     accordions: accordions,
     newsletterForms: newsletterForms,
     contactForm: contactForm,

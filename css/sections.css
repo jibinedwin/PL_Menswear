@@ -142,6 +142,34 @@
 .coll-desc { max-width: 62ch; }
 .coll-hero-img { position: relative; overflow: hidden; margin-top: clamp(32px, 5vw, 56px); aspect-ratio: 21 / 9; }
 .coll-hero-img img { width: 100%; height: 100%; object-fit: cover; }
+/* ---------- Location & Stores ---------- */
+.locations-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(20px, 3vw, 36px); margin-top: clamp(24px, 4vw, 40px); }
+.location-card {
+  background: var(--paper); border: 1px solid var(--line-soft); padding: 32px 28px;
+  display: flex; flex-direction: column; justify-content: space-between;
+  transition: transform 0.3s var(--ease), border-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+.location-card:hover { transform: translateY(-4px); border-color: var(--ink); box-shadow: var(--shadow-card); }
+.location-card__city { font-family: var(--serif); font-size: 26px; text-transform: uppercase; margin-bottom: 8px; color: var(--ink); }
+.location-card__name { font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--stone); font-weight: 500; margin-bottom: 16px; }
+.location-card__details { font-size: 14px; color: rgba(30,29,26,0.78); line-height: 1.6; margin-bottom: 24px; }
+.location-card__hours { font-size: 12px; color: var(--stone); letter-spacing: 0.08em; text-transform: uppercase; margin-top: auto; padding-top: 18px; border-top: 1px solid var(--line-soft); }
+
+/* ---------- Homepage Collections Grid ---------- */
+.collections-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(16px, 2.4vw, 30px); }
+.coll-card { position: relative; overflow: hidden; aspect-ratio: 4 / 5; display: block; }
+.coll-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.3s var(--ease-out); }
+.coll-card:hover img { transform: scale(1.05); }
+.coll-card__overlay {
+  position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end;
+  padding: clamp(20px, 3vw, 32px); color: var(--ivory);
+  background: linear-gradient(to top, rgba(18,16,14,0.7) 0%, rgba(18,16,14,0.15) 55%, rgba(18,16,14,0) 100%);
+}
+.coll-card__overlay .label { color: rgba(245,241,232,0.75); margin-bottom: 6px; }
+.coll-card__name { font-family: var(--serif); font-size: clamp(22px, 2.4vw, 30px); text-transform: uppercase; }
+.coll-card__desc { font-size: 13px; color: rgba(245,241,232,0.85); margin-top: 6px; max-width: 32ch; line-height: 1.4; }
+.coll-card__overlay .text-link { margin-top: 14px; color: var(--ivory); font-size: 11px; }
+
 @media (max-width: 900px) {
   .occ-grid { gap: 12px; }
   .occ-card, .occ-card:nth-child(n) { grid-column: 1 / -1; aspect-ratio: 4 / 5; }
@@ -153,9 +181,12 @@
   .masonry { columns: 2; }
   .about-grid, .contact-grid { grid-template-columns: 1fr; }
   .about-grid--flip .about-grid__media { order: -1; }
+  .locations-grid { grid-template-columns: 1fr; }
+  .collections-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 540px) {
   .cat-grid { grid-template-columns: 1fr; }
   .values-grid { grid-template-columns: 1fr; }
   .stats-row { grid-template-columns: 1fr 1fr; }
+  .collections-grid { grid-template-columns: 1fr; }
 }
