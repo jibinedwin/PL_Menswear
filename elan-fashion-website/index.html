@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ÉLAN — The Art of Dressing | Contemporary Menswear</title>
+  <meta name="description" content="Discover ÉLAN — The Art of Dressing. Contemporary luxury menswear crafted with timeless elegance, bespoke tailoring, and architectural minimalism.">
+  <meta name="keywords" content="luxury menswear, tailored suits, premium men fashion, bespoke tailoring, Italian fabrics, elegant casuals">
+  <meta name="theme-color" content="#101010">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ÉLAN — The Art of Dressing">
+  <meta property="og:description" content="Contemporary menswear crafted for the moments that matter.">
+  <meta property="og:image" content="assets/images/hero/hero-main.jpg">
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Serif) & Manrope (Modern Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23101010'/%3E%3Ctext x='16' y='22' font-family='serif' font-size='18' fill='%23C6A66B' text-anchor='middle'%3EÉ%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- =========================================================================
+       1. PRELOADER ANIMATION
+       ========================================================================= -->
+  <div id="preloader" class="preloader" role="status" aria-live="polite" aria-label="Loading ÉLAN digital experience">
+    <div class="preloader__content">
+      <div class="preloader__logo" aria-hidden="true">
+        <span>É</span>
+        <span>L</span>
+        <span>A</span>
+        <span>N</span>
+      </div>
+      <p class="preloader__tagline">The Art of Dressing</p>
+      <div class="preloader__progress-track">
+        <div class="preloader__progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       2. STICKY LUXURY NAVIGATION BAR
+       ========================================================================= -->
+  <header class="site-header" role="banner">
+    <div class="container header__inner">
+      <!-- Left: Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="ÉLAN — Return to top">
+        <span class="brand-logo__wordmark">ÉLAN</span>
+        <span class="brand-logo__sub">The Art of Dressing</span>
+      </a>
+
+      <!-- Center: Desktop Navigation Links -->
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <ul class="nav-desktop__list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#collections" class="nav-link">Collections</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#philosophy" class="nav-link">Our Story</a></li>
+          <li><a href="#stores" class="nav-link">Visit Us</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Action Buttons & Mobile Hamburger -->
+      <div class="header-actions">
+        <button class="header-action-btn header-search-btn" aria-label="Open search modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <button class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+    <ul class="mobile-nav__list">
+      <li><a href="#hero" class="mobile-nav__link">Home</a></li>
+      <li><a href="#collections" class="mobile-nav__link">Collections</a></li>
+      <li><a href="#gallery" class="mobile-nav__link">Gallery</a></li>
+      <li><a href="#philosophy" class="mobile-nav__link">Our Story</a></li>
+      <li><a href="#stores" class="mobile-nav__link">Visit Us</a></li>
+      <li><a href="#contact" class="mobile-nav__link">Contact</a></li>
+    </ul>
+    <div class="mobile-nav__footer">
+      <span class="eyebrow">ÉLAN ATELIER</span>
+      <p style="font-size: 0.85rem; color: var(--text-secondary);">Crafted for the discerning gentleman.</p>
+    </div>
+  </div>
+
+  <!-- Editorial Search Overlay -->
+  <div id="search-modal" class="search-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Search ÉLAN collections">
+    <div class="search-modal__inner">
+      <button class="search-modal__close" aria-label="Close search modal">&times;</button>
+      <div class="search-input-wrapper">
+        <input type="search" class="search-input" placeholder="Search the collection..." aria-label="Search collection">
+      </div>
+      <div class="search-suggestions">
+        <span>Curated terms:</span>
+        <button type="button" class="search-tag">Double Breasted Suit</button>
+        <button type="button" class="search-tag">Tuxedo</button>
+        <button type="button" class="search-tag">Cashmere Overshirt</button>
+        <button type="button" class="search-tag">Pure Silk Ties</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MAIN CONTENT
+       ========================================================================= -->
+  <main id="main-content">
+    
+    <!-- =======================================================================
+         3. HERO SECTION — MAIN VISUAL PRIORITY (100svh)
+         ======================================================================= -->
+    <section id="hero" class="hero-section" aria-label="Hero Section">
+      <div class="hero__bg-wrapper">
+        <img src="assets/images/hero/hero-main.jpg" alt="Tailored luxury menswear model standing in architectural setting" class="hero__bg-img" loading="eager" fetchpriority="high">
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="container hero__container">
+        <div class="hero__content">
+          <span class="eyebrow hero__eyebrow">The New Standard of Elegance</span>
+          <h1 class="hero__heading">
+            <span class="heading-line"><span class="line-inner">Defined by</span></span>
+            <span class="heading-line"><span class="line-inner">Distinction.</span></span>
+          </h1>
+          <p class="hero__subheading">
+            Contemporary menswear crafted for the moments that matter. Tailoring engineered with poise, precision, and architectural balance.
+          </p>
+          <div class="hero__actions">
+            <a href="#collections" class="btn btn-primary">
+              <span class="btn-text-label">Explore Collection</span>
+              <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+            </a>
+            <a href="#philosophy" class="btn btn-secondary">
+              <span class="btn-text-label">Discover Our Story</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Scroll Indicator -->
+      <a href="#philosophy" class="hero__scroll-indicator" aria-label="Scroll to philosophy section">
+        <span class="hero__scroll-text">Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </a>
+    </section>
+
+    <!-- =======================================================================
+         4. BRAND INTRODUCTION SECTION (OUR PHILOSOPHY)
+         ======================================================================= -->
+    <section id="philosophy" class="section section-light" aria-labelledby="philosophy-title">
+      <div class="container">
+        <div class="philosophy-grid">
+          <!-- Left Asymmetrical Column -->
+          <div class="philosophy__left reveal-left">
+            <span class="eyebrow">Our Philosophy</span>
+            <div class="gold-divider"></div>
+            <h2 id="philosophy-title" class="philosophy__quote">
+              &ldquo;Elegance is not worn. <br>
+              It is <em>expressed</em>.&rdquo;
+            </h2>
+            <div class="philosophy__metrics">
+              <div class="metric-item">
+                <div class="metric-item__num">100%</div>
+                <div class="metric-item__label">Fine Italian Wool &amp; Silk</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-item__num">42+</div>
+                <div class="metric-item__label">Artisanal Tailoring Hours</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-item__num">03</div>
+                <div class="metric-item__label">Metropolitan Flagships</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Story & Secondary Fashion Imagery -->
+          <div class="philosophy__right reveal-right">
+            <div class="philosophy__desc">
+              <p>
+                At ÉLAN, we believe that garments should never overpower the wearer. Instead, true tailoring works in subtle resonance with posture, confidence, and purpose.
+              </p>
+              <p>
+                From hand-rolled lapels to floating horsehair canvas construction, each piece in our atelier is sculpted with uncompromising reverence for classic Sartorial traditions—reinterpreted through a clean, modern aesthetic.
+              </p>
+            </div>
+            <div class="philosophy__image-wrap">
+              <img src="assets/images/lifestyle/about-hero(1).png" alt="Tailor hand-finishing a luxury suit jacket in the ÉLAN atelier" class="philosophy__img" loading="lazy">
+              <div class="philosophy__image-caption">
+                <span>The ÉLAN Tailoring Atelier</span>
+                <span style="color: var(--accent-gold); font-weight: 600;">Est. 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. FEATURED COLLECTIONS SECTION (ASYMMETRICAL EDITORIAL GRID)
+         ======================================================================= -->
+    <section id="collections" class="section" aria-labelledby="collections-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Curated Editions</span>
+          <h2 id="collections-title" class="section-heading">Curated for Every Occasion</h2>
+          <div class="gold-divider gold-divider--center"></div>
+          <p class="section-subtext">Four deliberate sartorial narratives designed to seamlessly accompany the modern gentleman from boardrooms to weekend escapes.</p>
+        </header>
+
+        <div class="collections-grid">
+          <!-- Tile 1: The Formal Edit (Large Block) -->
+          <article class="collection-card collection-card--large reveal-on-scroll">
+            <div class="collection-card__media">
+              <img src="assets/images/collections/Occassional-wear.jpg" alt="Gentleman wearing formal evening attire" class="collection-card__img" loading="lazy">
+            </div>
+            <div class="collection-card__overlay"></div>
+            <div class="collection-card__body">
+              <span class="collection-card__tag">Edition 01</span>
+              <h3 class="collection-card__title">The Formal Edit</h3>
+              <p class="collection-card__desc">Sharp double-breasted tuxedos and ceremony suits cut from high-twist Super 150s Merino wool.</p>
+              <a href="#gallery" class="btn-text">
+                Explore The Edit <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Tile 2: Modern Essentials (Medium Block) -->
+          <article class="collection-card collection-card--medium reveal-on-scroll reveal-delay-1">
+            <div class="collection-card__media">
+              <img src="assets/images/collections/Shirts.jpg" alt="Crisp tailored button-down shirts" class="collection-card__img" loading="lazy">
+            </div>
+            <div class="collection-card__overlay"></div>
+            <div class="collection-card__body">
+              <span class="collection-card__tag">Edition 02</span>
+              <h3 class="collection-card__title">Modern Essentials</h3>
+              <p class="collection-card__desc">Egyptian Giza cotton shirting and tailored trousers that redefine workday sophistication.</p>
+              <a href="#gallery" class="btn-text">
+                Explore Essentials <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Tile 3: Weekend Tailoring (Medium Block) -->
+          <article class="collection-card collection-card--alt-medium reveal-on-scroll">
+            <div class="collection-card__media">
+              <img src="assets/images/collections/T-shirt & Polo.jpg" alt="Polished knitwear and weekend polo shirt" class="collection-card__img" loading="lazy">
+            </div>
+            <div class="collection-card__overlay"></div>
+            <div class="collection-card__body">
+              <span class="collection-card__tag">Edition 03</span>
+              <h3 class="collection-card__title">Weekend Tailoring</h3>
+              <p class="collection-card__desc">Sea Island cotton knit polos, unlined overshirts, and relaxed silhouette chinos for off-duty ease.</p>
+              <a href="#gallery" class="btn-text">
+                Explore Casuals <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Tile 4: The Signature Collection (Large Block) -->
+          <article class="collection-card collection-card--alt-large reveal-on-scroll reveal-delay-1">
+            <div class="collection-card__media">
+              <img src="assets/images/collections/Jackets.jpg" alt="Handcrafted structured wool jacket" class="collection-card__img" loading="lazy">
+            </div>
+            <div class="collection-card__overlay"></div>
+            <div class="collection-card__body">
+              <span class="collection-card__tag">Edition 04</span>
+              <h3 class="collection-card__title">The Signature Collection</h3>
+              <p class="collection-card__desc">Limited-run outerwear, structured cashmere blazers, and custom horn-button outerwear.</p>
+              <a href="#gallery" class="btn-text">
+                Explore Signature <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. FASHION GALLERY SECTION (MASONRY-INSPIRED CSS GRID & LIGHTBOX)
+         ======================================================================= -->
+    <section id="gallery" class="section" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Visual Lookbook</span>
+          <h2 id="gallery-title" class="section-heading">An Expression of Style</h2>
+          <div class="gold-divider gold-divider--center"></div>
+          <p class="section-subtext">A photographic dialogue examining line, form, and texture across the contemporary masculine wardrobe.</p>
+        </header>
+
+        <!-- Category Filters -->
+        <div class="gallery-filter" role="tablist" aria-label="Filter gallery items">
+          <button class="gallery-filter-btn active" data-filter="all" role="tab" aria-selected="true">All Works</button>
+          <button class="gallery-filter-btn" data-filter="formal" role="tab" aria-selected="false">Formal Edit</button>
+          <button class="gallery-filter-btn" data-filter="casual" role="tab" aria-selected="false">Relaxed Luxury</button>
+          <button class="gallery-filter-btn" data-filter="accessories" role="tab" aria-selected="false">Accessories &amp; Denim</button>
+        </div>
+
+        <!-- Masonry Grid with 6 high-res editorial fashion photographs -->
+        <div class="gallery-grid">
+          <!-- Item 1: Occasion/Formal -->
+          <div class="gallery-item reveal-on-scroll" data-category="formal" tabindex="0" role="button" aria-label="Open Formal Tuxedo in lightbox">
+            <img src="assets/images/collections/Occassional-wear.jpg" alt="Tailored Black Velvet Evening Jacket" class="gallery-item__img" loading="lazy">
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__caption">
+                <span class="gallery-item__category">Ceremony &amp; Formal</span>
+                <h3 class="gallery-item__title">The Midnight Velvet Dinner Jacket</h3>
+              </div>
+            </div>
+            <div class="gallery-item__icon" aria-hidden="true">&#x26F6;</div>
+          </div>
+
+          <!-- Item 2: Shirting / Essentials -->
+          <div class="gallery-item reveal-on-scroll reveal-delay-1" data-category="formal" tabindex="0" role="button" aria-label="Open Sartorial Shirting in lightbox">
+            <img src="assets/images/collections/Shirts.jpg" alt="Artisan Italian Poplin Shirt with french cuffs" class="gallery-item__img" loading="lazy">
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__caption">
+                <span class="gallery-item__category">Essentials</span>
+                <h3 class="gallery-item__title">Cutaway Collar Egyptian Poplin</h3>
+              </div>
+            </div>
+            <div class="gallery-item__icon" aria-hidden="true">&#x26F6;</div>
+          </div>
+
+          <!-- Item 3: Outerwear / Jacket -->
+          <div class="gallery-item reveal-on-scroll reveal-delay-2" data-category="formal" tabindex="0" role="button" aria-label="Open Cashmere Blend Overcoat in lightbox">
+            <img src="assets/images/collections/Jackets.jpg" alt="Double-breasted structured camel outerwear" class="gallery-item__img" loading="lazy">
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__caption">
+                <span class="gallery-item__category">Signature Outerwear</span>
+                <h3 class="gallery-item__title">Architectural Wool-Cashmere Blazer</h3>
+              </div>
+            </div>
+            <div class="gallery-item__icon" aria-hidden="true">&#x26F6;</div>
+          </div>
+
+          <!-- Item 4: Casual / Polo -->
+          <div class="gallery-item reveal-on-scroll" data-category="casual" tabindex="0" role="button" aria-label="Open Knitted Polo in lightbox">
+            <img src="assets/images/collections/T-shirt & Polo.jpg" alt="Merino wool fine-gauge knitted polo" class="gallery-item__img" loading="lazy">
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__caption">
+                <span class="gallery-item__category">Relaxed Luxury</span>
+                <h3 class="gallery-item__title">Fine-Gauge Merino Knit Polo</h3>
+              </div>
+            </div>
+            <div class="gallery-item__icon" aria-hidden="true">&#x26F6;</div>
+          </div>
+
+          <!-- Item 5: Denim -->
+          <div class="gallery-item reveal-on-scroll reveal-delay-1" data-category="accessories" tabindex="0" role="button" aria-label="Open Selvedge Denim in lightbox">
+            <img src="assets/images/collections/Jeans.jpg" alt="Raw Japanese selvedge denim tailored jeans" class="gallery-item__img" loading="lazy">
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__caption">
+                <span class="gallery-item__category">Tailored Denim</span>
+                <h3 class="gallery-item__title">Kuroki Mills Selvedge Denim</h3>
+              </div>
+            </div>
+            <div class="gallery-item__icon" aria-hidden="true">&#x26F6;</div>
+          </div>
+
+          <!-- Item 6: Leather Accessories -->
+          <div class="gallery-item reveal-on-scroll reveal-delay-2" data-category="accessories" tabindex="0" role="button" aria-label="Open Leather Accessories in lightbox">
+            <img src="assets/images/collections/Accessories.jpg" alt="Handcrafted Tuscan calfskin leather accessories" class="gallery-item__img" loading="lazy">
+            <div class="gallery-item__overlay">
+              <div class="gallery-item__caption">
+                <span class="gallery-item__category">Leather Goods</span>
+                <h3 class="gallery-item__title">Hand-Burnished Calfskin Essentials</h3>
+              </div>
+            </div>
+            <div class="gallery-item__icon" aria-hidden="true">&#x26F6;</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal Component -->
+    <div id="gallery-lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Gallery Image Viewer">
+      <div class="lightbox__inner">
+        <button class="lightbox__close" aria-label="Close image viewer">&times;</button>
+        <button class="lightbox__nav lightbox__prev" aria-label="Previous image">&#10094;</button>
+        <button class="lightbox__nav lightbox__next" aria-label="Next image">&#10095;</button>
+        
+        <figure class="lightbox__figure">
+          <img src="" alt="" class="lightbox__img">
+        </figure>
+        <div class="lightbox__details">
+          <p class="lightbox__category"></p>
+          <h4 class="lightbox__title"></h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- =======================================================================
+         7. EDITORIAL BRAND EXPERIENCE SECTION (SPLIT LAYOUT)
+         ======================================================================= -->
+    <section class="editorial-split" aria-labelledby="experience-title">
+      <!-- Media Side -->
+      <div class="editorial-split__media">
+        <img src="assets/images/lifestyle/about-hero(1).png" alt="Editorial male model in architectural interior wearing an ÉLAN bespoke suit" class="editorial-split__img" loading="lazy">
+      </div>
+
+      <!-- Narrative Side -->
+      <div class="editorial-split__content reveal-right">
+        <span class="eyebrow">Crafted With Intention</span>
+        <h2 id="experience-title" class="editorial-split__heading">
+          Beyond Trends.<br>
+          Beyond Time.
+        </h2>
+        <div class="gold-divider"></div>
+        <p class="editorial-split__text">
+          Every silhouette we formulate embodies an exacting harmony between physical ease and unyielding precision. We reject fleeting novelty in favor of enduring sartorial resonance.
+        </p>
+
+        <div class="editorial-split__features">
+          <div class="editorial-feature">
+            <h4>Bespoke Fitting</h4>
+            <p>Individual pattern drafting tailored to individual posture and cadence.</p>
+          </div>
+          <div class="editorial-feature">
+            <h4>Natural Fibers</h4>
+            <p>100% natural fibers sourced from generational European mills.</p>
+          </div>
+        </div>
+
+        <div>
+          <a href="#stores" class="btn btn-primary">
+            <span class="btn-text-label">Explore Our World</span>
+            <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         8. STORE LOCATION WITH INTERACTIVE MAP
+         ======================================================================= -->
+    <section id="stores" class="section" aria-labelledby="stores-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Presence &amp; Salons</span>
+          <h2 id="stores-title" class="section-heading">Find Your Presence</h2>
+          <div class="gold-divider gold-divider--center"></div>
+          <p class="section-subtext">Experience the drape, texture, and tailored service in person at our flagship locations.</p>
+        </header>
+
+        <div class="locations-container">
+          <!-- Left Details Panel -->
+          <div class="locations-details reveal-left">
+            <div class="store-tabs" role="tablist" aria-label="Select store city">
+              <button class="store-tab-btn active" data-store="mumbai" role="tab" aria-selected="true">Mumbai Flagship</button>
+              <button class="store-tab-btn" data-store="bengaluru" role="tab" aria-selected="false">Bengaluru Atelier</button>
+              <button class="store-tab-btn" data-store="delhi" role="tab" aria-selected="false">New Delhi Studio</button>
+            </div>
+
+            <!-- Store 1: Mumbai -->
+            <article id="store-mumbai" class="store-info-card active" role="tabpanel">
+              <h3 class="store-info-card__name">ÉLAN Flagship Atelier — Mumbai</h3>
+              <p class="store-info-card__type">Heritage Salon &amp; Bespoke Suite</p>
+              
+              <div class="store-detail-row">
+                <span class="store-detail-icon" aria-hidden="true">&#9906;</span>
+                <p>ÉLAN House, 21 Column Street, Fort, Mumbai, Maharashtra 400001</p>
+              </div>
+              <div class="store-detail-row">
+                <span class="store-detail-icon" aria-hidden="true">&#9742;</span>
+                <p>+91 (022) 2284 9100 / appointments@elan-menswear.com</p>
+              </div>
+              <div class="store-detail-row">
+                <span class="store-detail-icon" aria-hidden="true">&#9719;</span>
+                <p>Monday – Saturday: 10:30 AM – 8:30 PM<br>Sunday: By Private Appointment Only</p>
+              </div>
+
+              <p class="store-note">
+                * Note: Address represents the designated flagship demonstration salon. In-person styling appointments can be scheduled via the contact desk below.
+              </p>
+
+              <div style="margin-top: 2rem;">
+                <a href="https://maps.google.com/?q=Fort,Mumbai" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  <span>Get Directions</span>
+                  <span class="btn-arrow" aria-hidden="true">&#8599;</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Store 2: Bengaluru -->
+            <article id="store-bengaluru" class="store-info-card" role="tabpanel">
+              <h3 class="store-info-card__name">ÉLAN Experience Atelier — Bengaluru</h3>
+              <p class="store-info-card__type">Contemporary Lounge &amp; Ready-to-Wear</p>
+              
+              <div class="store-detail-row">
+                <span class="store-detail-icon" aria-hidden="true">&#9906;</span>
+                <p>100 Feet Road, HAL 2nd Stage, Indiranagar, Bengaluru, Karnataka 560038</p>
+              </div>
+              <div class="store-detail-row">
+                <span class="store-detail-icon" aria-hidden="true">&#9742;</span>
+                <p>+91 (080) 4125 7800 / blr@elan-menswear.com</p>
+              </div>
+              <div class="store-detail-row">
+                <span class="store-detail-icon" aria-hidden="true">&#9719;</span>
+                <p>Monday – Sunday: 11:00 AM – 9:00 PM</p>
+              </div>
+
+              <p class="store-note">
+                * Walk-ins and personal styling consultations welcome daily.
+              </p>
+
+              <div style="margin-top: 2rem;">
+                <a href="https://maps.google.com/?q=Indiranagar,Bengaluru" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  <span>Get Directions</span>
+                  <span class="btn-arrow" aria-hidden="true">&#8599;</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Store 3: New Delhi -->
+            <article id="store-delhi" class="store-info-card" role="tabpanel">
+              <h3 class="store-info-card__name">ÉLAN Heritage Studio — New Delhi</h3>
+              <p class="store-info-card__type">Ceremony Pavilion &amp; Archive</p>
+              
+              <div class="store-detail-row">
+                <span class="store-detail-icon" aria-hidden="true">&#9906;</span>
+                <p>Ambawatta One, Kalka Das Marg, Mehrauli, New Delhi 110030</p>
+              </div>
+              <div class="store-detail-row">
+                <span class="store-detail-icon" aria-hidden="true">&#9742;</span>
+                <p>+91 (011) 2664 3200 / delhi@elan-menswear.com</p>
+              </div>
+              <div class="store-detail-row">
+                <span class="store-detail-icon" aria-hidden="true">&#9719;</span>
+                <p>Tuesday – Sunday: 11:00 AM – 8:30 PM (Mondays Closed)</p>
+              </div>
+
+              <p class="store-note">
+                * Showcase repository for our ceremonial evening wear and exclusive fabric swatches.
+              </p>
+
+              <div style="margin-top: 2rem;">
+                <a href="https://maps.google.com/?q=Mehrauli,New+Delhi" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  <span>Get Directions</span>
+                  <span class="btn-arrow" aria-hidden="true">&#8599;</span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Right Map Iframe -->
+          <div class="map-wrapper reveal-right">
+            <iframe 
+              class="map-iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.9142750694116!2d72.83151897593257!3d18.935105282240974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1ddb3f07297%3A0xbce5c79294d1f211!2sFort%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1714560000000!5m2!1sen!2sin" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade" 
+              title="ÉLAN Store Location Map"
+              allowfullscreen>
+            </iframe>
+            <div class="map-badge">Curated Atelier Coordinates</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         9. CONTACT SECTION — FUNCTIONAL FORM
+         ======================================================================= -->
+    <section id="contact" class="section" aria-labelledby="contact-title" style="background: var(--bg-secondary);">
+      <div class="container">
+        <header class="section-header">
+          <span class="eyebrow">Client Services &amp; Appointments</span>
+          <h2 id="contact-title" class="section-heading">Let's Start a Conversation.</h2>
+          <div class="gold-divider gold-divider--center"></div>
+          <p class="section-subtext">For bespoke appointments, collection inquiries, or collaborations, our styling atelier welcomes your correspondence.</p>
+        </header>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Form -->
+          <div class="contact-form-card reveal-left">
+            <form id="elan-contact-form" novalidate>
+              <div class="form-group-row">
+                <div class="form-field">
+                  <label for="cf-name">Full Name *</label>
+                  <input type="text" id="cf-name" name="name" required placeholder="e.g. Julian Sterling" autocomplete="name">
+                  <span class="form-error" role="alert">Please enter your full name.</span>
+                </div>
+                <div class="form-field">
+                  <label for="cf-email">Email Address *</label>
+                  <input type="email" id="cf-email" name="email" required placeholder="name@domain.com" autocomplete="email">
+                  <span class="form-error" role="alert">Please provide a valid email.</span>
+                </div>
+              </div>
+
+              <div class="form-group-row">
+                <div class="form-field">
+                  <label for="cf-phone">Phone Number (Indian Mobile) *</label>
+                  <input type="tel" id="cf-phone" name="phone" required placeholder="e.g. +91 98765 43210" autocomplete="tel">
+                  <span class="form-error" role="alert">Please enter a valid 10-digit mobile number.</span>
+                </div>
+                <div class="form-field">
+                  <label for="cf-subject">Subject *</label>
+                  <select id="cf-subject" name="subject" required>
+                    <option value="">Select an inquiry topic</option>
+                    <option value="bespoke">Bespoke Tailoring Appointment</option>
+                    <option value="collection">Collection &amp; Sizing Consultation</option>
+                    <option value="orders">Client Care &amp; Order Services</option>
+                    <option value="press">Press &amp; Architectural Collaboration</option>
+                  </select>
+                  <span class="form-error" role="alert">Please select an inquiry topic.</span>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="cf-message">Message *</label>
+                <textarea id="cf-message" name="message" rows="5" required placeholder="Detail your appointment preferences, measurements, or request..."></textarea>
+                <span class="form-error" role="alert">Please enter a message (at least 10 characters).</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span class="btn-text-label">Send Message</span>
+                <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+              </button>
+
+              <div id="contact-status-alert" class="form-status-alert" role="status" tabindex="-1"></div>
+            </form>
+          </div>
+
+          <!-- Right: Direct Client Desk Details -->
+          <aside class="contact-aside reveal-right">
+            <div class="contact-card">
+              <h3>Private Styling Desk</h3>
+              <p>Schedule a one-on-one session with our master tailor at any of our three city locations or virtually.</p>
+              <p style="margin-top: 1rem;"><a href="mailto:atelier@elan-menswear.com">atelier@elan-menswear.com</a></p>
+              <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 4px;">Replies within 24 business hours.</p>
+            </div>
+
+            <div class="contact-card">
+              <h3>Concierge &amp; WhatsApp</h3>
+              <p>Immediate sizing advice and material swatch inquiries via our direct line.</p>
+              <p style="margin-top: 1rem;"><a href="tel:+919000000000">+91 (0) 90000 00000</a></p>
+              <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 4px;">Monday through Saturday, 10 AM – 8 PM IST.</p>
+            </div>
+
+            <div class="contact-card">
+              <h3>Press &amp; Showrooms</h3>
+              <p>For editorial styling loans, high-resolution imagery, and architectural collaborations.</p>
+              <p style="margin-top: 1rem;"><a href="mailto:press@elan-menswear.com">press@elan-menswear.com</a></p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       10. FOOTER
+       ========================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Col 1: Brand & Wordmark -->
+        <div class="footer__col footer__col--brand">
+          <div class="brand-logo">
+            <span class="brand-logo__wordmark">ÉLAN</span>
+            <span class="brand-logo__sub">The Art of Dressing</span>
+          </div>
+          <p class="footer__desc">
+            A bespoke study in contemporary tailoring, fine fabrics, and understated presence. Crafted for men of distinction.
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div class="footer__col">
+          <h4 class="footer__heading">Navigation</h4>
+          <ul class="footer__links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#philosophy">Our Story</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Social & Press -->
+        <div class="footer__col">
+          <h4 class="footer__heading">Social</h4>
+          <ul class="footer__links">
+            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+            <li><a href="mailto:care@elan-menswear.com">Email Desk</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div class="footer__col footer__newsletter">
+          <h4 class="footer__heading">Private Dispatch</h4>
+          <p>Receive seasonal collection previews and private atelier invitations.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to the ÉLAN Private Dispatch.'); this.reset();">
+            <input type="email" placeholder="Your email address" required aria-label="Subscribe to newsletter">
+            <button type="submit" class="newsletter-btn" aria-label="Submit newsletter subscription">&rarr;</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 ÉLAN. All Rights Reserved. Crafted with intention.</p>
+        <a href="#hero" class="back-to-top-btn" aria-label="Return to top of page">
+          <span>Back to Top</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: Modular & Deferred -->
+  <script src="js/animations.js" defer></script>
+  <script src="js/gallery.js" defer></script>
+  <script src="js/contact.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

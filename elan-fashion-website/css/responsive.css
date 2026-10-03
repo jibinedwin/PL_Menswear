@@ -1,0 +1,181 @@
+/* ==========================================================================
+   ÉLAN — The Art of Dressing
+   Responsive Breakpoints & Mobile Optimization
+   (360px, 390px, 768px, 1024px, 1440px, 1920px)
+   ========================================================================== */
+
+/* Large Screens (1440px+) */
+@media (min-width: 1440px) {
+  :root {
+    --container-max: 1480px;
+  }
+  .hero__heading {
+    font-size: 6rem;
+  }
+}
+
+/* Laptops & Tablets Landscape (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .editorial-split {
+    grid-template-columns: 1fr;
+  }
+
+  .editorial-split__media {
+    min-height: 420px;
+  }
+
+  .locations-container {
+    grid-template-columns: 1fr;
+  }
+
+  .map-wrapper {
+    min-height: 400px;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 74px;
+  }
+
+  .site-header.scrolled {
+    height: 68px;
+  }
+
+  /* Collections Grid */
+  .collections-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .collection-card--large,
+  .collection-card--medium,
+  .collection-card--alt-medium,
+  .collection-card--alt-large {
+    grid-column: span 1;
+    min-height: 440px;
+  }
+
+  /* Gallery Grid */
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .gallery-item:nth-child(n) {
+    grid-column: span 1;
+    aspect-ratio: 1 / 1;
+  }
+
+  .gallery-item:nth-child(1),
+  .gallery-item:nth-child(4) {
+    aspect-ratio: 4 / 5;
+  }
+
+  /* Lightbox Navigation */
+  .lightbox__prev {
+    left: 10px;
+  }
+
+  .lightbox__next {
+    right: 10px;
+  }
+
+  /* Contact Form Grid */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .form-group-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .editorial-split__features {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer__bottom {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+/* Small Mobiles (max-width: 480px / 390px / 360px) */
+@media (max-width: 480px) {
+  :root {
+    --container-pad: 1.25rem;
+  }
+
+  .brand-logo__wordmark {
+    font-size: 1.55rem;
+    letter-spacing: 0.18em;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .philosophy__metrics {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .store-tabs {
+    flex-direction: column;
+  }
+
+  .store-tab-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .collection-card {
+    min-height: 380px;
+  }
+
+  .collection-card__body {
+    padding: 1.5rem;
+  }
+
+  .lightbox__img {
+    max-height: 60vh;
+  }
+}
