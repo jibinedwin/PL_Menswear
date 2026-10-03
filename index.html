@@ -31,6 +31,33 @@
     "currenciesAccepted": "INR"
   }
   </script>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+    var video = document.querySelector(".hero-video");
+
+    if (!video) {
+        return;
+    }
+
+    function startVideo() {
+        var playPromise = video.play();
+
+        if (playPromise !== undefined) {
+            playPromise.catch(function () {
+                console.log("Video autoplay was prevented.");
+            });
+        }
+    }
+
+    if (video.readyState >= 3) {
+        startVideo();
+    } else {
+        video.addEventListener("canplay", startVideo, {
+            once: true
+        });
+    }
+});
+</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -149,10 +176,24 @@
   <main id="main">
     <!-- ======= HOME (HERO) ======= -->
     <section class="hero" id="home" aria-label="The new season">
-      <div class="hero__media">
-        <video autoplay muted loop playsinline fetchpriority="high" width="1920" height="1080" src="/assets/videos/Hero_section.mp4"></video>
-        <!-- <img src="assets/images/hero/hero-main.jpg" alt="Model in an architectural setting wearing the new season collection" fetchpriority="high" width="1920" height="1080"> -->
-      </div>
+      <!-- <div class="hero__media">
+        <video autoplay muted loop playsinline fetchpriority="high" width="1920" height="1080" src="/assets/videos/output.mp4"></video>
+        <img src="assets/images/hero/hero-main.jpg" alt="Model in an architectural setting wearing the new season collection" fetchpriority="high" width="1920" height="1080">
+      </div> -->
+
+  <div class="hero__media">
+    <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        poster="./assets/images/hero/hero-poster.jpg">
+        <source src="./assets/videos/Hero_section.mp4" type="video/mp4">
+    </video>
+  </div>
+
       <div class="hero__scrim"></div>
       <div class="hero__content">
         <div class="hero__inner">
