@@ -10,8 +10,8 @@ const path = require('path');
 const ROOT = path.join(__dirname, '..');
 
 const pages = ['index.html'];
-const cssFiles = ['css/base.css', 'css/header.css', 'css/hero.css', 'css/products.css', 'css/sections.css', 'css/responsive.css'];
-const jsFiles = ['js/utils.js', 'js/data.js', 'js/navigation.js', 'js/wishlist.js', 'js/cart.js', 'js/search.js', 'js/products.js', 'js/main.js'];
+const cssFiles = ['css/base.css', 'css/header.css', 'css/hero.css', 'css/products.css', 'css/sections.css', 'css/responsive.css', 'css/terrain.css'];
+const jsFiles = ['js/utils.js', 'js/data.js', 'js/navigation.js', 'js/wishlist.js', 'js/cart.js', 'js/search.js', 'js/products.js', 'js/main.js', 'js/terrain.js'];
 
 let issues = 0;
 
