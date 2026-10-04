@@ -1,0 +1,169 @@
+/* =========================================================
+   PRELOADER
+========================================================= */
+
+#preloader {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+
+  background: #000;
+
+  z-index: 999999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 1;
+  visibility: visible;
+
+  transition:
+    opacity 0.8s ease,
+    visibility 0.8s ease;
+}
+
+#preloader.preloader--hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.preloader__content {
+  width: 100%;
+  text-align: center;
+}
+
+/* PL */
+
+.preloader__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(4rem, 10vw, 7rem);
+  font-weight: 400;
+
+  line-height: 1;
+  letter-spacing: 0.15em;
+
+  color: #f7f4ee;
+
+  overflow: hidden;
+
+  margin-bottom: 24px;
+}
+
+.preloader__logo span {
+  display: inline-block;
+
+  opacity: 0;
+  transform: translateY(100%);
+
+  animation: plLetterReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.preloader__logo span:nth-child(1) {
+  animation-delay: 0.15s;
+}
+
+.preloader__logo span:nth-child(2) {
+  animation-delay: 0.35s;
+}
+
+/* THE ART OF DRESSING */
+
+.preloader__tagline {
+  margin: 0 0 35px;
+
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+
+  line-height: 1.5;
+
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+
+  color: #aaa69e;
+
+  opacity: 0;
+  transform: translateY(15px);
+
+  animation: plTaglineReveal 0.8s ease forwards;
+  animation-delay: 0.65s;
+}
+
+/* LOADING LINE */
+
+.preloader__progress-track {
+  width: 200px;
+  height: 2px;
+
+  margin: 0 auto;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  overflow: hidden;
+}
+
+.preloader__progress-bar {
+  width: 0;
+  height: 100%;
+
+  background: #c6a66b;
+
+  transform-origin: left center;
+
+  transition: width 0.15s linear;
+}
+
+/* LETTER ANIMATION */
+
+@keyframes plLetterReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* TAGLINE ANIMATION */
+
+@keyframes plTaglineReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+
+  .preloader__logo {
+    font-size: 4rem;
+    letter-spacing: 0.12em;
+  }
+
+  .preloader__tagline {
+    font-size: 9px;
+    letter-spacing: 0.25em;
+  }
+
+  .preloader__progress-track {
+    width: 160px;
+  }
+}
