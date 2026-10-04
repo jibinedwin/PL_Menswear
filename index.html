@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="css/products.css">
   <link rel="stylesheet" href="css/sections.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/preloader.css">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231E1D1A'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='16' fill='%23F5F1E8' text-anchor='middle'%3EPL%3C/text%3E%3C/svg%3E">
   <script type="application/ld+json">
   {
@@ -60,6 +61,27 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 </head>
 <body>
+  
+<div id="preloader" class="preloader">
+  <div class="preloader__content">
+
+    <div class="preloader__logo">
+      <span>P</span>
+      <span>L</span>
+    </div>
+
+    <p class="preloader__tagline">
+      The Art of Dressing
+    </p>
+
+    <div class="preloader__progress-track">
+      <div class="preloader__progress-bar"></div>
+    </div>
+
+  </div>
+</div>
+
+
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- ======= HEADER ======= -->
@@ -395,8 +417,10 @@ document.addEventListener("DOMContentLoaded", function () {
   <script src="js/search.js" defer></script>
   <script src="js/products.js" defer></script>
   <script src="js/main.js" defer></script>
+  <script src="js/preloader.js" defer></script>
+
 </body>
 </html>
 
 
-<a href="">ol</a>
+<!-- <a href="">ol</a> -->
