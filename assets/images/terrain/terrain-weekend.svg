@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img">
+  <defs>
+    <linearGradient id="bgterrainweekend" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#F3EDE0"/><stop offset="0.55" stop-color="#E6DAC4"/><stop offset="1" stop-color="#CDBB9C"/>
+    </linearGradient>
+    <radialGradient id="sunterrainweekend" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grterrainweekend" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#bgterrainweekend)"/>
+  <circle cx="832" cy="581" r="588" fill="url(#sunterrainweekend)"/>
+  <rect x="0" y="826" width="1200" height="374" fill="#CDBB9C" opacity="0.5"/>
+  <rect x="919" y="374" width="50" height="452" fill="#2E2C28" opacity="0.06"/>
+  <rect x="530" y="220" width="44" height="607" fill="#2E2C28" opacity="0.07"/>
+  <g fill="#2E2C28" opacity="0.92">
+    <circle cx="435.1870694383978" cy="290.3" r="40.5"/>
+    <path d="M 391.8 828.5
+      L 383.1 654.9
+      C 377.3 597.0 371.5 573.8 371.5 527.5
+      C 371.5 469.7 360.0 446.5 354.2 411.8
+      C 348.4 377.1 360.0 353.9 383.1 342.4
+      C 406.3 330.8 464.1 330.8 487.3 342.4
+      C 510.4 353.9 522.0 377.1 516.2 411.8
+      C 510.4 446.5 498.8 469.7 498.8 527.5
+      C 498.8 573.8 493.1 597.0 487.3 654.9
+      L 478.6 828.5
+      L 449.7 828.5
+      L 446.8 701.2
+      L 423.6 701.2
+      L 420.7 828.5 Z"/>
+    <ellipse cx="435.1870694383978" cy="845.8234770997658" rx="150.45895293145213" ry="23.147531220223403" fill="#000" opacity="0.14"/>
+  </g>
+  <g fill="#2E2C28" opacity="0.92">
+    <circle cx="822.9314482435584" cy="204.3" r="47.0"/>
+    <path d="M 772.6 828.5
+      L 762.5 627.1
+      C 755.8 560.0 749.1 533.1 749.1 479.5
+      C 749.1 412.3 735.7 385.5 729.0 345.2
+      C 722.3 304.9 735.7 278.1 762.5 264.7
+      C 789.4 251.3 856.5 251.3 883.3 264.7
+      C 910.2 278.1 923.6 304.9 916.9 345.2
+      C 910.2 385.5 896.8 412.3 896.8 479.5
+      C 896.8 533.1 890.0 560.0 883.3 627.1
+      L 873.3 828.5
+      L 839.7 828.5
+      L 836.4 680.8
+      L 809.5 680.8
+      L 806.2 828.5 Z"/>
+    <ellipse cx="822.9314482435584" cy="848.5981360635362" rx="174.50599728412962" ry="26.847076505250712" fill="#000" opacity="0.14"/>
+  </g>
+  <rect width="1200" height="1200" filter="url(#grterrainweekend)" opacity="0.9"/>
+</svg>

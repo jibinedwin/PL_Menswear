@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img">
+  <defs>
+    <linearGradient id="bgterrainwork" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#E8E6E0"/><stop offset="0.55" stop-color="#D2CFC6"/><stop offset="1" stop-color="#ABA79B"/>
+    </linearGradient>
+    <radialGradient id="sunterrainwork" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grterrainwork" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/></filter>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#bgterrainwork)"/>
+  <circle cx="600" cy="505" r="518" fill="url(#sunterrainwork)"/>
+  <rect x="0" y="825" width="1200" height="375" fill="#ABA79B" opacity="0.5"/>
+  <rect x="346" y="322" width="37" height="503" fill="#2E2C28" opacity="0.12"/>
+  <rect x="434" y="150" width="55" height="674" fill="#2E2C28" opacity="0.13"/>
+  <rect x="773" y="206" width="44" height="619" fill="#2E2C28" opacity="0.14"/>
+  <rect x="831" y="270" width="57" height="555" fill="#2E2C28" opacity="0.11"/>
+  <g fill="#2E2C28" opacity="0.92">
+    <circle cx="567.7359580770135" cy="227.0" r="45.1"/>
+    <path d="M 519.4 826.5
+      L 509.7 633.1
+      C 503.3 568.7 496.8 542.9 496.8 491.3
+      C 496.8 426.8 483.9 401.1 477.5 362.4
+      C 471.0 323.7 483.9 297.9 509.7 285.0
+      C 535.5 272.1 600.0 272.1 625.8 285.0
+      C 651.5 297.9 664.4 323.7 658.0 362.4
+      C 651.5 401.1 638.6 426.8 638.6 491.3
+      C 638.6 542.9 632.2 568.7 625.8 633.1
+      L 616.1 826.5
+      L 583.9 826.5
+      L 580.6 684.7
+      L 554.8 684.7
+      L 551.6 826.5 Z"/>
+    <ellipse cx="567.7359580770135" cy="845.8707192408293" rx="167.61008724689486" ry="25.786167268753058" fill="#000" opacity="0.14"/>
+  </g>
+  <rect width="1200" height="1200" filter="url(#grterrainwork)" opacity="0.9"/>
+</svg>

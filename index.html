@@ -16,7 +16,8 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/hero.css">
-  <link rel="stylesheet" href="/css/promo.css">
+  <link rel="stylesheet" href="css/promo.css">
+  <link rel="stylesheet" href="css/terrain.css">
   <link rel="stylesheet" href="css/products.css">
   <link rel="stylesheet" href="css/sections.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -265,6 +266,92 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
 </section>
 
+    <!-- ======= EVERY TERRAIN (sticky editorial occasion selector) ======= -->
+    <div class="terrain-section" data-terrain-sticky>
+      <plmw-terrain
+        class="terrain"
+        data-enable-animation="true"
+        data-sticky-section="true"
+        style="--terrain-scroll-height: 300svh; --terrain-main-image-position: 50% 16%;"
+        aria-label="Shop every terrain">
+        <div class="terrain__pin" data-terrain-pin>
+
+          <h2 class="terrain__mobile-heading">
+            <span>( Terrains )</span>
+            Every <em>Terrain</em>
+          </h2>
+
+          <h2 class="terrain__ruler" aria-hidden="true" data-terrain-ruler>
+            <span data-terrain-ruler-first>EVERY</span>
+            <i data-terrain-ruler-second>Terrain</i>
+          </h2>
+
+          <div class="terrain__final">
+            <nav class="terrain__rail" aria-label="Terrain collections" inert aria-hidden="true">
+
+              <a class="terrain__card" href="#collections" aria-label="Work" data-terrain-card style="--terrain-image-position: 50% 16%;">
+                <span class="terrain__label">
+                  <b>Work</b>
+                  <i>For the nine-to-nine</i>
+                </span>
+                <span class="terrain__media">
+                  <img src="assets/images/terrain/terrain-work.svg" alt="Work" width="1200" height="1200" loading="lazy" class="terrain__image">
+                </span>
+              </a>
+
+              <a class="terrain__card" href="#collections" aria-label="Festive" data-terrain-card style="--terrain-image-position: 50% 24%;">
+                <span class="terrain__label">
+                  <b>Festive</b>
+                  <i>For the long evenings</i>
+                </span>
+                <span class="terrain__media">
+                  <img src="assets/images/terrain/terrain-festive.svg" alt="Festive" width="1200" height="1200" loading="lazy" class="terrain__image">
+                </span>
+              </a>
+
+              <a class="terrain__card" href="#collections" aria-label="Weekend" data-terrain-card style="--terrain-image-position: 50% 30%;">
+                <span class="terrain__label">
+                  <b>Weekend</b>
+                  <i>Off-duty, still sharp</i>
+                </span>
+                <span class="terrain__media">
+                  <img src="assets/images/terrain/terrain-weekend.svg" alt="Weekend" width="1200" height="1200" loading="lazy" class="terrain__image">
+                </span>
+              </a>
+
+              <a class="terrain__card" href="#collections" aria-label="Travel" data-terrain-card style="--terrain-image-position: 50% 16%;">
+                <span class="terrain__label">
+                  <b>Travel</b>
+                  <i>Packs light, lands crisp</i>
+                </span>
+                <span class="terrain__media">
+                  <img src="assets/images/terrain/terrain-travel.svg" alt="Travel" width="1200" height="1200" loading="lazy" class="terrain__image">
+                </span>
+              </a>
+
+              <a class="terrain__card" href="#collections" aria-label="Evening" data-terrain-card style="--terrain-image-position: 50% 16%;">
+                <span class="terrain__label">
+                  <b>Evening</b>
+                  <i>After-hours polish</i>
+                </span>
+                <span class="terrain__media">
+                  <img src="assets/images/terrain/terrain-evening.svg" alt="Evening" width="1200" height="1200" loading="lazy" class="terrain__image">
+                </span>
+              </a>
+
+            </nav>
+          </div>
+
+          <div class="terrain__intro" aria-hidden="true" data-terrain-intro>
+            <span class="terrain__intro-first" data-terrain-first>EVERY</span>
+            <span class="terrain__intro-media" data-terrain-intro-media></span>
+            <span class="terrain__intro-second" data-terrain-second>Terrain</span>
+          </div>
+
+        </div>
+      </plmw-terrain>
+    </div>
+
     <!-- ======= COLLECTIONS ======= -->
     <section class="section" id="collections" aria-labelledby="collections-title">
       <div class="container">
@@ -412,6 +499,7 @@ document.addEventListener("DOMContentLoaded", function () {
   <script src="js/utils.js" defer></script>
   <script src="js/data.js" defer></script>
   <script src="js/navigation.js" defer></script>
+  <script src="js/terrain.js" defer></script>
   <script src="js/wishlist.js" defer></script>
   <script src="js/cart.js" defer></script>
   <script src="js/search.js" defer></script>
