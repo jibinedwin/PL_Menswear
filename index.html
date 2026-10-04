@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="/css/promo.css">
   <link rel="stylesheet" href="css/products.css">
   <link rel="stylesheet" href="css/sections.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -30,6 +31,33 @@
     "currenciesAccepted": "INR"
   }
   </script>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+    var video = document.querySelector(".hero-video");
+
+    if (!video) {
+        return;
+    }
+
+    function startVideo() {
+        var playPromise = video.play();
+
+        if (playPromise !== undefined) {
+            playPromise.catch(function () {
+                console.log("Video autoplay was prevented.");
+            });
+        }
+    }
+
+    if (video.readyState >= 3) {
+        startVideo();
+    } else {
+        video.addEventListener("canplay", startVideo, {
+            once: true
+        });
+    }
+});
+</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -148,9 +176,24 @@
   <main id="main">
     <!-- ======= HOME (HERO) ======= -->
     <section class="hero" id="home" aria-label="The new season">
-      <div class="hero__media">
+      <!-- <div class="hero__media">
+        <video autoplay muted loop playsinline fetchpriority="high" width="1920" height="1080" src="/assets/videos/output.mp4"></video>
         <img src="assets/images/hero/hero-main.jpg" alt="Model in an architectural setting wearing the new season collection" fetchpriority="high" width="1920" height="1080">
-      </div>
+      </div> -->
+
+  <div class="hero__media">
+    <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        poster="./assets/images/hero/hero-poster.jpg">
+        <source src="./assets/videos/Hero_section.mp4" type="video/mp4">
+    </video>
+  </div>
+
       <div class="hero__scrim"></div>
       <div class="hero__content">
         <div class="hero__inner">
@@ -161,11 +204,44 @@
           <p class="hero__desc">Modern menswear designed for work, weekends, travel and everything in between.</p>
           <div class="hero__actions">
             <a class="btn btn--solid-light" href="#collections">Explore collections</a>
-            <a class="btn btn--light" href="#collections">Curated Wardrobe</a>
+            <a class="btn btn--light" href="#contact">Get in touch</a>
           </div>
         </div>
       </div>
     </section>
+
+   <!-- ========= Promo ============ -->
+
+    <section class="promo-marquee">
+    <div class="promo-marquee__track">
+        <div class="promo-marquee__content">
+            <span>NEW SEASON</span>
+            <i>✦</i>
+            <span>PREMIUM MENSWEAR</span>
+            <i>✦</i>
+            <span>TIMELESS STYLE</span>
+            <i>✦</i>
+            <span>CRAFTED FOR CONFIDENCE</span>
+            <i>✦</i>
+            <span>PL MENS WEAR</span>
+            <i>✦</i>
+        </div>
+
+        <!-- Duplicate for seamless infinite loop -->
+        <div class="promo-marquee__content" aria-hidden="true">
+            <span>NEW SEASON</span>
+            <i>✦</i>
+            <span>PREMIUM MENSWEAR</span>
+            <i>✦</i>
+            <span>TIMELESS STYLE</span>
+            <i>✦</i>
+            <span>CRAFTED FOR CONFIDENCE</span>
+            <i>✦</i>
+            <span>PL MENS WEAR</span>
+            <i>✦</i>
+        </div>
+    </div>
+</section>
 
     <!-- ======= COLLECTIONS ======= -->
     <section class="section" id="collections" aria-labelledby="collections-title">
@@ -268,7 +344,43 @@
     </section>
 
     <!-- ======= LOCATIONS ======= -->
-    
+    <section class="section" id="locations" aria-labelledby="locations-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Stores &amp; Studios</span>
+            <h2 class="h-section" id="locations-title">Our Locations</h2>
+          </div>
+          <p class="lead">Visit our experiential stores and styling ateliers across India.</p>
+        </div>
+        <div class="locations-grid">
+          <div class="location-card reveal">
+            <div>
+              <h3 class="location-card__city">Mumbai</h3>
+              <p class="location-card__name">Flagship Atelier — Fort</p>
+              <p class="location-card__details">PL House, 21 Column Street, Fort, Mumbai 400001<br>Personal appointments &amp; bespoke tailoring available.</p>
+            </div>
+            <p class="location-card__hours">Mon–Sat: 10:00 AM – 8:00 PM</p>
+          </div>
+          <div class="location-card reveal reveal-delay-1">
+            <div>
+              <h3 class="location-card__city">Bengaluru</h3>
+              <p class="location-card__name">Experience Store — Indiranagar</p>
+              <p class="location-card__details">100 Feet Road, HAL 2nd Stage, Indiranagar, Bengaluru 560038<br>Walk-ins and styling consultations welcome.</p>
+            </div>
+            <p class="location-card__hours">Mon–Sun: 11:00 AM – 9:00 PM</p>
+          </div>
+          <div class="location-card reveal reveal-delay-2">
+            <div>
+              <h3 class="location-card__city">New Delhi</h3>
+              <p class="location-card__name">Studio — Mehrauli</p>
+              <p class="location-card__details">Ambawatta One, Kalka Das Marg, Mehrauli, New Delhi 110030<br>Curated seasonal collection displays.</p>
+            </div>
+            <p class="location-card__hours">Tue–Sun: 11:00 AM – 8:30 PM</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ======= GET IN TOUCH ======= -->
     
