@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/hero.css">
@@ -22,6 +23,8 @@
   <link rel="stylesheet" href="css/sections.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/preloader.css">
+  <link rel="stylesheet" href="css/location.css">
+
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231E1D1A'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='16' fill='%23F5F1E8' text-anchor='middle'%3EPL%3C/text%3E%3C/svg%3E">
   <script type="application/ld+json">
   {
@@ -453,44 +456,70 @@ document.addEventListener("DOMContentLoaded", function () {
     </section>
 
     <!-- ======= LOCATIONS ======= -->
-    <section class="section" id="locations" aria-labelledby="locations-title">
+   <section id="stores" class="section" aria-labelledby="stores-title">
       <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Stores &amp; Studios</span>
-            <h2 class="h-section" id="locations-title">Our Locations</h2>
+        <header class="section-header">
+          <span class="eyebrow">Presence &amp; Salons</span>
+          <h2 id="stores-title" class="section-heading">Find Your Presence</h2>
+          <div class="gold-divider gold-divider--center"></div>
+          <!-- <p class="section-subtext">Experience the drape, texture, and tailored service in person at our flagship locations.</p> -->
+        </header>
+
+        <div class="locations-container">
+          <!-- Left Details Panel -->
+          <div class="locations-details reveal-left">
+            <!-- <div class="store-tabs" role="tablist" aria-label="Select store city">
+              <button class="store-tab-btn active" data-store="mumbai" role="tab" aria-selected="true">Mumbai Flagship</button>
+            </div> -->
+
+            <!-- Store 1: Mumbai -->
+            <article id="store-mumbai" class="store-info-card active" role="tabpanel">
+              <h3 class="store-info-card__name">PL Mens Wear — Kappukadu</h3>
+              <p class="store-info-card__type">Premium &amp; Modern</p>
+              
+              <div class="store-detail-row">
+                <span class="store-detail-icon" aria-hidden="true">&#9906;</span>
+                <p>J M, Complex, Junction, Kappukadu, Vilathurai, Tamil Nadu 629162.</p>
+              </div>
+              <div class="store-detail-row">
+                <span class="store-detail-icon" aria-hidden="true">&#9742;</span>
+                <p>+91 (022) 2284 9100 / appointments@elan-menswear.com</p>
+              </div>
+              <div class="store-detail-row">
+                <span class="store-detail-icon" aria-hidden="true">&#9719;</span>
+                <p>Monday – Saturday: 10:30 AM – 8:30 PM<br>Sunday: By Private Appointment Only</p>
+              </div>
+
+              <p class="store-note">
+                * Note: Address represents the designated flagship demonstration salon. In-person styling appointments can be scheduled via the contact desk below.
+              </p>
+
+              <div style="margin-top: 2rem;">
+                <a href="https://www.google.com/maps/place/Pl+menswear/@8.2973732,77.2013784,17z/data=!4m6!3m5!1s0x3b0455005c1b25c1:0xc3430d7d9d1d3e0b!8m2!3d8.2976545!4d77.2020677!16s%2Fg%2F11mybz4bks?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  <span>Get Directions</span>
+                  <span class="btn-arrow" aria-hidden="true">&#8599;</span>
+                </a>
+              </div>
+            </article>
+            
           </div>
-          <p class="lead">Visit our experiential stores and styling ateliers across India.</p>
-        </div>
-        <div class="locations-grid">
-          <div class="location-card reveal">
-            <div>
-              <h3 class="location-card__city">Mumbai</h3>
-              <p class="location-card__name">Flagship Atelier — Fort</p>
-              <p class="location-card__details">PL House, 21 Column Street, Fort, Mumbai 400001<br>Personal appointments &amp; bespoke tailoring available.</p>
-            </div>
-            <p class="location-card__hours">Mon–Sat: 10:00 AM – 8:00 PM</p>
-          </div>
-          <div class="location-card reveal reveal-delay-1">
-            <div>
-              <h3 class="location-card__city">Bengaluru</h3>
-              <p class="location-card__name">Experience Store — Indiranagar</p>
-              <p class="location-card__details">100 Feet Road, HAL 2nd Stage, Indiranagar, Bengaluru 560038<br>Walk-ins and styling consultations welcome.</p>
-            </div>
-            <p class="location-card__hours">Mon–Sun: 11:00 AM – 9:00 PM</p>
-          </div>
-          <div class="location-card reveal reveal-delay-2">
-            <div>
-              <h3 class="location-card__city">New Delhi</h3>
-              <p class="location-card__name">Studio — Mehrauli</p>
-              <p class="location-card__details">Ambawatta One, Kalka Das Marg, Mehrauli, New Delhi 110030<br>Curated seasonal collection displays.</p>
-            </div>
-            <p class="location-card__hours">Tue–Sun: 11:00 AM – 8:30 PM</p>
+
+          <!-- Right Map Iframe -->
+          <div class="map-wrapper reveal-right">
+            <iframe 
+              class="map-iframe"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3948.0545229417135!2d77.2013784!3d8.2973732!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0455005c1b25c1%3A0xc3430d7d9d1d3e0b!2sPl%20menswear!5e0!3m2!1sen!2sin!4v1791135608096!5m2!1sen!2sin" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade" 
+              title="ÉLAN Store Location Map"
+              allowfullscreen>
+            </iframe>
+            <!-- <div class="map-badge">Curated Atelier Coordinates</div> -->
           </div>
         </div>
       </div>
     </section>
-
+    
     <!-- ======= GET IN TOUCH ======= -->
     
   </main>
@@ -506,6 +535,8 @@ document.addEventListener("DOMContentLoaded", function () {
   <script src="js/products.js" defer></script>
   <script src="js/main.js" defer></script>
   <script src="js/preloader.js" defer></script>
+  <script src="js/location.js" defer></script>
+
 
 </body>
 </html>
