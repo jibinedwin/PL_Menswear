@@ -521,6 +521,72 @@ document.addEventListener("DOMContentLoaded", function () {
     </section>
     
     <!-- ======= GET IN TOUCH ======= -->
+
+    <section class="section section--tint" id="contact" aria-labelledby="touch-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Direct Line</span>
+            <h2 class="h-section" id="touch-title">Get in Touch</h2>
+          </div>
+          <p class="lead">Have a styling query or question about an order? Write to us or call our client desk.</p>
+        </div>
+        <div class="contact-grid">
+          <div>
+            <form class="contact-form" novalidate>
+              <div class="form-field">
+                <label for="home-cf-name">Full name</label>
+                <input id="home-cf-name" name="name" type="text" required autocomplete="name" placeholder="Your name">
+                <p class="error-msg">Please enter your name.</p>
+              </div>
+              <div class="form-field">
+                <label for="home-cf-email">Email address</label>
+                <input id="home-cf-email" name="email" type="email" required autocomplete="email" placeholder="name@example.com">
+                <p class="error-msg">Please enter a valid email address.</p>
+              </div>
+              <div class="form-field">
+                <label for="home-cf-topic">Topic</label>
+                <select id="home-cf-topic" name="topic" required>
+                  <option value="">Select a topic</option>
+                  <option>Store visit &amp; appointment</option>
+                  <option>Order &amp; delivery assistance</option>
+                  <option>Styling &amp; fit advice</option>
+                  <option>General inquiry</option>
+                </select>
+                <p class="error-msg">Please select a topic.</p>
+              </div>
+              <div class="form-field">
+                <label for="home-cf-msg">Message</label>
+                <textarea id="home-cf-msg" name="message" rows="4" required placeholder="How can we help?"></textarea>
+                <p class="error-msg">Please write your message.</p>
+              </div>
+              <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap">
+                <button class="btn btn--solid" type="submit">Send message</button>
+                <p class="form-success small muted" role="status" aria-live="polite"></p>
+              </div>
+            </form>
+          </div>
+          <aside class="contact-aside">
+            <div class="contact-block">
+              <h3>Client Care Email</h3>
+              <p><a href="mailto:appointments@elan-menswear.com">appointments@elan-menswear.com</a></p>
+              <p style="margin-top:4px;font-size:13px;color:var(--stone)">We respond within one working day.</p>
+            </div>
+            <div class="contact-block">
+              <h3>Telephone &amp; WhatsApp</h3>
+              <p><a href="tel:+9102222849100">+91 (022) 2284 9100</a></p>
+              <p style="margin-top:4px;font-size:13px;color:var(--stone)">Monday to Saturday, 10:30 AM – 8:30 PM .</p>
+            </div>
+            <div class="contact-block">
+              <h3>Corporate &amp; Atelier Inquiries</h3>
+              <p>J M, Complex, Junction, Kappukadu, Vilathurai, Tamil Nadu 629162.</p>
+              <!-- <p style="margin-top:10px"><a class="text-link" href="#contact">View FAQs &amp; Help Desk <span class="arrow" aria-hidden="true">&rarr;</span></a></p> -->
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    
     
   </main>
 
