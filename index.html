@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/preloader.css">
   <link rel="stylesheet" href="css/location.css">
+  <link rel="stylesheet" href="css/audio.css">
 
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231E1D1A'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='16' fill='%23F5F1E8' text-anchor='middle'%3EPL%3C/text%3E%3C/svg%3E">
   <script type="application/ld+json">
@@ -82,8 +83,23 @@ document.addEventListener("DOMContentLoaded", function () {
       <div class="preloader__progress-bar"></div>
     </div>
 
+    <button id="preloader-enter-btn" class="preloader__enter-btn" style="display: none; margin-top: 2rem; opacity: 0; transition: opacity 0.5s ease;">
+      <span>Click to Explore</span>
+      <span class=btn-arrow aria-hidden="true">&#8594</span>
+    </button>
+
   </div>
 </div>
+
+<!-- Background Music -->
+<audio id="siteMusic" loop preload="auto">
+    <source src="assets/audio/Background Fashion Music - Commercial Luxury Chill Deep House - Royalty Free For Advertising.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Music Toggle -->
+<button id="musicToggle" class="music-toggle" aria-label="Turn music on">
+    <span id="musicIcon">♫</span>
+</button>
 
 
   <a class="skip-link" href="#main">Skip to content</a>
@@ -602,7 +618,7 @@ document.addEventListener("DOMContentLoaded", function () {
   <script src="js/main.js" defer></script>
   <script src="js/preloader.js" defer></script>
   <script src="js/location.js" defer></script>
-
+  <script src="js/audio.js" defer></script>
 
 </body>
 </html>
