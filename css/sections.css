@@ -111,16 +111,29 @@
 /* ---------- About page ---------- */
 .about-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
 .about-grid + .about-grid { margin-top: clamp(48px, 7vw, 96px); }
-.about-grid__body .h-section { margin-bottom: 18px; }
+.about-grid__body .h-section { margin-bottom: 18px; text-align:center; }
 .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 34px; }
 .stat { border-top: 1px solid var(--line); padding-top: 16px; }
 .stat strong { font-family: var(--serif); font-size: clamp(28px, 3vw, 42px); font-weight: 500; display: block; }
-.stat span { font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--stone); }
+.stat span { 
+
+  display: block;    
+  text-align: center;
+  font-size: 11px; 
+  letter-spacing: 0.24em; 
+  text-transform: uppercase; 
+  color: var(--stone); 
+  
+}
 
 /* ---------- Contact ---------- */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 5vw, 72px); align-items: stretch; }
 .contact-form-column { display: flex; flex-direction: column; }
-.contact-heading { margin-bottom: clamp(24px, 3.5vw, 40px); }
+
+.contact-heading { 
+  margin-bottom: clamp(24px, 3.5vw, 40px);
+  text-align:center 
+}
 .contact-form { display: grid; gap: 18px; }
 .form-field label { display: block; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--stone); margin-bottom: 8px; }
 .form-field input, .form-field select, .form-field textarea {
@@ -140,6 +153,7 @@
 
 .reviews-heading {
   margin-bottom: clamp(24px, 3.5vw, 40px);
+  text-align:center
 }
 
 .reviews-heading .h-section {

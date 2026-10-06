@@ -13,7 +13,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
+   <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/hero.css">
@@ -25,6 +29,7 @@
   <link rel="stylesheet" href="css/preloader.css">
   <link rel="stylesheet" href="css/location.css">
   <link rel="stylesheet" href="css/audio.css">
+   <link rel="stylesheet" href="css/footer.css">
 
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231E1D1A'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='16' fill='%23F5F1E8' text-anchor='middle'%3EPL%3C/text%3E%3C/svg%3E">
   <script type="application/ld+json">
@@ -82,11 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="preloader__progress-track">
       <div class="preloader__progress-bar"></div>
     </div>
-
-    <button id="preloader-enter-btn" class="preloader__enter-btn" style="display: none; margin-top: 2rem; opacity: 0; transition: opacity 0.5s ease;">
-      <span>Click to Explore</span>
-      <span class=btn-arrow aria-hidden="true">&#8594</span>
-    </button>
 
   </div>
 </div>
@@ -510,7 +510,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 * Note: Address represents the designated flagship demonstration salon. In-person styling appointments can be scheduled via the contact desk below.
               </p>
 
-              <div style="margin-top: 2rem;">
+              <div style="margin-top: 2rem; text-align:center;">
                 <a href="https://www.google.com/maps/place/Pl+menswear/@8.2973732,77.2013784,17z/data=!4m6!3m5!1s0x3b0455005c1b25c1:0xc3430d7d9d1d3e0b!8m2!3d8.2976545!4d77.2020677!16s%2Fg%2F11mybz4bks?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
                   <span>Get Directions</span>
                   <span class="btn-arrow" aria-hidden="true">&#8599;</span>
@@ -573,7 +573,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <textarea id="home-cf-msg" name="message" rows="4" required placeholder="How can we help?"></textarea>
                 <p class="error-msg">Please write your message.</p>
               </div>
-              <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap">
+              <div style="display:block;text-align:center;gap:18px;flex-wrap:wrap">
                 <button class="btn btn--solid" type="submit">Send message</button>
                 <p class="form-success small muted" role="status" aria-live="polite"></p>
               </div>
@@ -640,6 +640,73 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       </div>
     </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+
+                    <span class="logo-icon">
+                         <i class="fa-solid fa-hat-cowboy"></i>
+                    </span>
+
+                    <span>
+                        PL <span class="logo-dot">Mens </span>Wear
+                    </span>
+
+                </a>
+
+                <p>
+                    For alpha males, by alpha males
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+
+                <a href="#collections">Collection</a>
+
+                <a href="#locations">Location</a>
+
+            </div>
+
+
+            <div class="social-links">
+
+                <a href="https://www.instagram.com/pl_mens_wear/", target="_blank" >
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 PL Mens Wear. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
     
     
   </main>

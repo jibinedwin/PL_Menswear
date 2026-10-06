@@ -121,28 +121,6 @@
   transition: width 0.15s linear;
 }
 
-/* ENTER BUTTON */
-
-.preloader__enter-btn {
-  background: transparent;
-  border: 1px solid #c6a66b;
-  color: #c6a66b;
-  padding: 12px 30px;
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  cursor: pointer;
-  margin: 20px auto 0;
-  display: block;
-  transition: all 0.3s ease;
-}
-
-.preloader__enter-btn:hover {
-  background: #c6a66b;
-  color: #000;
-}
-
 /* LETTER ANIMATION */
 
 @keyframes plLetterReveal {

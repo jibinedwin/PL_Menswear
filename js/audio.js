@@ -7,14 +7,40 @@ const musicToggle = document.getElementById("musicToggle");
 const musicIcon = document.getElementById("musicIcon");
 
 siteMusic.volume = 0.5;
+let musicIntentionallyStarted = false;
 
+// Invisible interaction listeners to unlock audio element for iOS Safari
+let audioUnlocked = false;
+const unlockAudio = () => {
+    if (!audioUnlocked) {
+        audioUnlocked = true;
+        
+        // Temporarily play and pause to unlock the audio context
+        if (siteMusic.paused && !musicIntentionallyStarted) {
+            const p = siteMusic.play();
+            if (p !== undefined) {
+                p.then(() => {
+                    if (!musicIntentionallyStarted) {
+                        siteMusic.pause();
+                        siteMusic.currentTime = 0;
+                    }
+                }).catch(() => {});
+            }
+        }
+        
+        document.removeEventListener("click", unlockAudio);
+        document.removeEventListener("touchstart", unlockAudio);
+    }
+};
+document.addEventListener("click", unlockAudio, { once: true });
+document.addEventListener("touchstart", unlockAudio, { once: true });
 
 /* =========================================
    START MUSIC AFTER PRELOADER
 ========================================= */
 
 function startSiteMusic() {
-
+    musicIntentionallyStarted = true;
     siteMusic.currentTime = 0;
 
     const playPromise = siteMusic.play();

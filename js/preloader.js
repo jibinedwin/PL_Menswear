@@ -40,37 +40,27 @@ function initPreloader() {
       clearInterval(loading);
 
       setTimeout(() => {
-        
-        const enterBtn = document.getElementById('preloader-enter-btn');
-        if (enterBtn) {
-          enterBtn.style.display = 'block';
-          // Trigger reflow to ensure transition works
-          void enterBtn.offsetWidth;
-          enterBtn.style.opacity = '1';
 
-          enterBtn.addEventListener('click', () => {
-            // Hide preloader
-            preloader.classList.add('preloader--hidden');
+        // Hide preloader
+        preloader.classList.add('preloader--hidden');
 
-            // Enable scrolling
-            document.body.style.overflow = '';
+        // Enable scrolling
+        document.body.style.overflow = '';
 
-            // Start hero animation
-            if (heroSection) {
-              heroSection.classList.add('is-loaded');
-            }
-            
-            // Start music AFTER click
-            if (typeof startSiteMusic === 'function') {
-                startSiteMusic();
-            }
-
-            // Remove preloader after fade-out
-            setTimeout(() => {
-              preloader.remove();
-            }, 800);
-          }, { once: true });
+        // Start hero animation
+        if (heroSection) {
+          heroSection.classList.add('is-loaded');
         }
+
+        // Start music AFTER preloader finishes
+        if (typeof startSiteMusic === 'function') {
+            startSiteMusic();
+        }
+
+        // Remove preloader after fade-out
+        setTimeout(() => {
+          preloader.remove();
+        }, 800);
 
       }, 300);
     }
