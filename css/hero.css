@@ -110,7 +110,7 @@
 /* If they need different keyframe animations */
 .hero__title1 { animation: hero__title1 5.0s ease forwards; }
 .hero__title2 { animation: hero__title2 5.2s ease forwards; }
-.hero__title3 { animation: hero__title3 5.5s ease forwards; }
+.hero__title3 { animation: hero__title3 5s ease forwards; }
 
 
 @keyframes hero__title1{  
