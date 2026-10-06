@@ -123,3 +123,35 @@
     text-align:center;
     margin-bottom:3rem;
 }
+
+/* =========================================
+   RESPONSIVE (MOBILE)
+   ========================================= */
+@media (max-width: 900px) {
+  .locations-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .locations-details {
+    order: 1;
+    width: 100%;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .map-wrapper {
+    order: 2;
+    width: 100%;
+    min-height: 350px;
+    height: 350px;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .map-iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+  }
+}
