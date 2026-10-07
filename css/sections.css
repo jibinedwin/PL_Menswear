@@ -111,14 +111,29 @@
 /* ---------- About page ---------- */
 .about-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
 .about-grid + .about-grid { margin-top: clamp(48px, 7vw, 96px); }
-.about-grid__body .h-section { margin-bottom: 18px; }
+.about-grid__body .h-section { margin-bottom: 18px; text-align:center; }
 .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 34px; }
 .stat { border-top: 1px solid var(--line); padding-top: 16px; }
 .stat strong { font-family: var(--serif); font-size: clamp(28px, 3vw, 42px); font-weight: 500; display: block; }
-.stat span { font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--stone); }
+.stat span { 
+
+  display: block;    
+  text-align: center;
+  font-size: 11px; 
+  letter-spacing: 0.24em; 
+  text-transform: uppercase; 
+  color: var(--stone); 
+  
+}
 
 /* ---------- Contact ---------- */
-.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 5vw, 72px); align-items: start; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 5vw, 72px); align-items: stretch; }
+.contact-form-column { display: flex; flex-direction: column; }
+
+.contact-heading { 
+  margin-bottom: clamp(24px, 3.5vw, 40px);
+  text-align:center 
+}
 .contact-form { display: grid; gap: 18px; }
 .form-field label { display: block; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--stone); margin-bottom: 8px; }
 .form-field input, .form-field select, .form-field textarea {
@@ -129,11 +144,119 @@
 .form-field .error-msg { display: none; color: var(--burgundy); font-size: 12px; margin-top: 6px; }
 .form-field.has-error input, .form-field.has-error textarea, .form-field.has-error select { border-color: var(--burgundy); }
 .form-field.has-error .error-msg { display: block; }
-.contact-aside { display: grid; gap: 28px; }
-.contact-block { border-top: 1px solid var(--line); padding-top: 18px; }
-.contact-block h3 { font-family: var(--sans); font-size: 12px; letter-spacing: 0.26em; text-transform: uppercase; font-weight: 500; }
-.contact-block p { margin-top: 8px; color: rgba(30,29,26,0.72); font-size: 14.5px; }
-.contact-block a:hover { text-decoration: underline; text-underline-offset: 3px; }
+/* ---------- Reviews & Customer Feedback ---------- */
+.reviews-aside {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.reviews-heading {
+  margin-bottom: clamp(24px, 3.5vw, 40px);
+  text-align:center
+}
+
+.reviews-heading .h-section {
+  font-size: clamp(22px, 2.4vw, 34px);
+}
+
+
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  flex: 1;
+}
+
+.product-card {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: var(--ivory);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+  transform: scale(1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Hover gradient effect */
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(245, 241, 232, 0.6), #ffffff);
+  opacity: 0;
+  filter: blur(12px);
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.product-card:hover .card-overlay {
+  opacity: 0.3;
+}
+
+/* Card content */
+.card-content {
+  position: relative;
+  z-index: 2;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Title */
+.product-title {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.25;
+}
+
+/* Description */
+.product-description {
+  margin: 6px 0 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: rgba(30, 29, 26, 0.76);
+}
+
+/* Rating */
+.product-card .rating {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: rgba(30, 29, 26, 0.7);
+  font-size: 13px;
+}
+
+/* Star */
+.product-card .star {
+  width: 18px;
+  height: 18px;
+  fill: #eab308;
+  flex-shrink: 0;
+}
+
+.product-card .rating span {
+  margin-left: 8px;
+}
+
+
 
 /* ---------- FAQ (contact) ---------- */
 .faq-list { max-width: 780px; margin-inline: auto; }

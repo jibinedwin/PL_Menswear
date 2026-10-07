@@ -64,7 +64,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 a { color: inherit; text-decoration: none; }
 ul[class], ol[class] { list-style: none; padding: 0; }
 input, select, textarea { font: inherit; color: inherit; }
-strong { font-weight: 600; }
+strong { font-weight: 600; text-align:center;}
 
 /* ---------- Accessibility ---------- */
 :focus-visible { outline: 2px solid var(--charcoal); outline-offset: 3px; }
@@ -105,10 +105,16 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.08; let
   font-size: 11px; font-weight: 500; letter-spacing: 0.32em; text-transform: uppercase; color: var(--stone);
 }
 .eyebrow {
-  display: inline-block; font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase;
+  display:block; font-size: 11px; letter-spacing: 0.4em; text-transform: uppercase;
   color: var(--sand-deep); margin-bottom: 18px;
+  text-align:center;
 }
-.lead { font-size: clamp(15px, 1.4vw, 18px); color: rgba(30,29,26,0.72); max-width: 56ch; }
+.lead { 
+  font-size: clamp(15px, 1.4vw, 18px); 
+  color: rgba(30,29,26,0.72); 
+  max-width: 56ch; 
+  text-align:center;
+}
 .muted { color: rgba(30, 29, 26, 0.6); }
 .small { font-size: 13px; }
 

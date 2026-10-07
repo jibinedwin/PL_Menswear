@@ -8,12 +8,32 @@
   min-height: clamp(560px, 92vh, 960px);
   display: flex; align-items: flex-end;
 }
-.hero__media { position: absolute; inset: 0; }
+/* .hero__media { position: absolute; inset: 0; }
 .hero__media img {
   width: 100%; height: 100%; object-fit: cover;
   transform: scale(1.08); animation: heroZoom 2.6s var(--ease-out) forwards;
 }
-@keyframes heroZoom { to { transform: scale(1); } }
+
+@keyframes heroZoom { to { transform: scale(1); } } */
+
+.hero__media {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #111;
+}
+
+.hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
 .hero__scrim {
   position: absolute; inset: 0;
   background:
@@ -88,9 +108,9 @@
 @media (prefers-reduced-motion: reduce) { .marquee__track { animation: none; } }
 
 /* If they need different keyframe animations */
-.hero__title1 { animation: hero__title1 0.5s ease forwards; }
-.hero__title2 { animation: hero__title2 2.0s ease forwards; }
-.hero__title3 { animation: hero__title3 2.5s ease forwards; }
+.hero__title1 { animation: hero__title1 5.0s ease forwards; }
+.hero__title2 { animation: hero__title2 5.2s ease forwards; }
+.hero__title3 { animation: hero__title3 5s ease forwards; }
 
 
 @keyframes hero__title1{  
