@@ -1,0 +1,29 @@
+/* ==========================================================================
+   PL MENS WEAR — RESPONSIVE OVERRIDES
+   ========================================================================== */
+
+@media (max-width: 1080px) {
+  .nav-desktop { display: none; }
+  .hamburger { display: grid; }
+  .header__inner { grid-template-columns: auto 1fr auto; height: 66px; }
+  .header__center { display: none; }
+  .brand { justify-self: start; }
+}
+
+@media (max-width: 760px) {
+  :root { --gutter: 20px; --section-y: 64px; }
+  .header__inner { height: 60px; }
+  .brand__name { font-size: 19px; }
+  .brand__tag { display: none; }
+  .icon-btn { width: 40px; height: 40px; }
+  .hero { min-height: 86vh; }
+  .hero__title { font-size: clamp(44px, 13vw, 72px); }
+  .hero__actions .btn { min-height: 50px; padding-inline: 26px; }
+  .section-head { flex-direction: column; align-items: flex-start; }
+  .story__inner { max-width: 100%; }
+}
+
+@media (max-width: 400px) {
+  .brand__name { font-size: 17px; }
+  .header-actions { gap: 2px; }
+}

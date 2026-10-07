@@ -1,0 +1,26 @@
+{
+  "brand": "PL Mens Wear",
+  "promoBar": {
+    "messages": [
+      "FREE SHIPPING ABOVE ₹1999",
+      "7-DAY EASY RETURNS",
+      "NEW SEASON — NOW LIVE"
+    ]
+  },
+  "trendingSearches": ["Linen Shirts", "Polos", "Trousers", "New Arrivals", "Best Sellers"],
+  "occasions": [
+    { "name": "Work", "slug": "work", "image": "assets/images/occasions/occasion-work.svg", "description": "Sharp shirting and tailored comfort for the nine-to-nine." },
+    { "name": "Weekend", "slug": "weekend", "image": "assets/images/occasions/occasion-weekend.svg", "description": "Easy pieces that still look considered." },
+    { "name": "Travel", "slug": "travel", "image": "assets/images/occasions/occasion-travel.svg", "description": "Wrinkle-proof fabrics for the long way there." },
+    { "name": "Festive", "slug": "festive", "image": "assets/images/occasions/occasion-festive.svg", "description": "Texture and quiet sheen for the season's evenings." },
+    { "name": "Evening", "slug": "evening", "image": "assets/images/occasions/occasion-evening.svg", "description": "Dress for dinner without dressing up too much." }
+  ],
+  "collections": [
+    { "name": "The Linen Edit", "slug": "linen", "image": "assets/images/collections/collection-linen.svg", "description": "Lightweight textures and effortless silhouettes designed for warm days.", "story": "Linen that is spun for breathability, cut for movement, and finished to feel broken-in from the first wear." },
+    { "name": "Essential Collection", "slug": "essentials", "image": "assets/images/collections/collection-essentials.svg", "description": "The core wardrobe, perfected one piece at a time.", "story": "Every essential is wear-tested for months before it earns a place in the line." },
+    { "name": "Premium Collection", "slug": "premium", "image": "assets/images/collections/collection-premium.svg", "description": "Fine merino, wool suiting and considered finishing.", "story": "Fewer, better pieces — made with premium yarns and quieter details." },
+    { "name": "Weekend Collection", "slug": "weekend", "image": "assets/images/collections/collection-weekend.svg", "description": "Relaxed fits for the days that belong to you.", "story": "Comfort-first fabrics that still photograph like tailoring." },
+    { "name": "Festive Edit", "slug": "festive", "image": "assets/images/collections/collection-festive.svg", "description": "Celebration-ready textures in a warm, festive palette.", "story": "Designed for the season's long evenings and family photographs." },
+    { "name": "Travel", "slug": "travel", "image": "assets/images/collections/collection-travel.svg", "description": "Wrinkle-resistant, packable pieces built for movement.", "story": "Tested on red-eye flights and long drives before it reaches the rack." }
+  ]
+}
