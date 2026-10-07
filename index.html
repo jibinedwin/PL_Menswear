@@ -95,6 +95,16 @@ document.addEventListener("DOMContentLoaded", function () {
     <source src="assets/audio/Background Fashion Music - Commercial Luxury Chill Deep House - Royalty Free For Advertising.mp3" type="audio/mpeg">
 </audio>
 
+<script>
+const siteMusic = document.getElementById("siteMusic");
+
+document.addEventListener("click", function () {
+    siteMusic.play().catch(function (error) {
+        console.log("Audio playback was blocked:", error);
+    });
+}, { once: true });
+</script>
+
 <!-- Music Toggle -->
 <button id="musicToggle" class="music-toggle" aria-label="Turn music on">
     <span id="musicIcon">♫</span>
